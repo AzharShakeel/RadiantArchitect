@@ -1,4 +1,4 @@
-# Azhar Shakeel &nbsp;·&nbsp; <span>The Radiant Architect</span>
+
 
 > *"I architect foundations that think, and intelligence that endures. Tools are chosen by the problem — never the hype cycle."*
 
