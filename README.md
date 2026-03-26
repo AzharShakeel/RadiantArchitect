@@ -1,128 +1,175 @@
+<!-- ============================================================
+     SYSTEMS ONLINE. DEPTH: CLASSIFIED.
+     ============================================================ -->
 
-
-> *"I architect foundations that think, and intelligence that endures. Tools are chosen by the problem — never the hype cycle."*
-
----
-
-## Enterprise AI Systems Engineer &nbsp;·&nbsp; Algorithm Developer &nbsp;·&nbsp; Full-Stack Architect
-
-I build real AI-powered systems that solve real problems. Not demos. Not wrappers. Not off-the-shelf tools with a new interface.
-
-Every system I ship is the result of immense thinking before a single line is written. What looks effortless on the surface is engineered to a depth most never see.
-
-My foundation wasn't built in a classroom — it was built through **obsessive independent research, real projects, and the discipline of figuring things out when no one was teaching them.**
-
----
-
-## 🐍 Python — Primary Backend Language. Always.
-
-Every AI pipeline, algorithmic system, orchestration layer, and backend architecture runs on Python. Full stop. No exceptions. No substitutes.
-
----
-
-## How I Operate
+<div align="center">
 
 ```
-Problem received
-      │
-      ▼
-┌─────────────────────────────────────┐
-│   Certainty or Uncertainty?         │
-│   The problem decides the ratio.    │
-│   Not preference. Not trend.        │
-└─────────────────────────────────────┘
-      │                    │
-      ▼                    ▼
-Deterministic         Learning System
-Logic Engine          Right paradigm
-                      for the data
-      │                    │
-      └────────┬───────────┘
-               ▼
-      System Architecture
-      Python · Linux · Precision
-               │
-               ▼
-      Production. No gaps.
+██████╗ ██╗   ██╗██╗██╗     ██████╗
+██╔══██╗██║   ██║██║██║     ██╔══██╗
+██████╔╝██║   ██║██║██║     ██║  ██║
+██╔══██╗██║   ██║██║██║     ██║  ██║
+██████╔╝╚██████╔╝██║███████╗██████╔╝
+╚═════╝  ╚═════╝ ╚═╝╚══════╝╚═════╝
 ```
 
-> The process behind that classification is not something I document publicly.
+**`[ ENTERPRISE AI · ALGORITHM ARCHITECTURE · FULL-STACK SYSTEMS ]`**
+
+*The foundation holds. The intelligence compounds. The work speaks.*
+
+</div>
 
 ---
 
-## What I Build
-
-Enterprise AI systems that solve problems end-to-end — algorithm design through production infrastructure. Real stakes, real data, real delivery. The R&D behind it stays private.
-
----
-
-## The Stack
-
 ```
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  BACKEND
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  🐍 Python        ████████████████████████  Primary · Always
-  🤖 AI / ML       ████████████████████░░░░  Paradigm-driven
-  🔬 Algorithms    ███████████████████░░░░░  Custom · Ground-up
+┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄  CORE DIRECTIVE  ┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  INFRASTRUCTURE
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  🐧 Linux         ████████████████████████  Native · Not just hosted
-  🐳 Docker/CI/CD  ██████████████████░░░░░░  Repeatable · Hardened
+  I don't wrap APIs and call it AI.
+  I don't chase frameworks that won't exist next year.
+  I build systems engineered to outlast the hype.
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  FRONTEND
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  ⚡ HTML/CSS/JS   ████████████████████░░░░  Foundation · Always
-  ⚛️  React/TS      ████████████░░░░░░░░░░░░  Strategic · Earned
+  Every line has a reason. Every architecture has a philosophy.
+  What ships is production — not a proof of concept with ambition.
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  ◼ SHADOW STACK   ░░░░░░░░░░░░░░░░░░░░░░░░  Not public. Not here.
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄
 ```
 
 ---
 
-## Engineering Principles
+## `01` &nbsp; The Language
 
-🐧 &nbsp;**Linux-Native, Not Linux-Hosted** — Systems that carry Unix DNA at every layer. Modular, minimal footprint, zero architectural debt, secure before a policy is written.
-
-🔒 &nbsp;**Production That Holds** — What ships is auditable, repeatable, and built to survive real load. Not patched to stability after the fact.
-
-🧬 &nbsp;**Depth That Compounds** — Every system built adds to a private body of knowledge that never stops growing. The gaps close. The work gets sharper. No endpoint.
-
----
-
-## Occasionally
-
-I write about technology and teach — when a concept is genuinely worth sharing publicly.
-**Building, researching, and solving real problems always comes first.**
+<table>
+<tr>
+<td width="60">🐍</td>
+<td><strong>Python. Primary. Always.</strong><br/>Not a preference — a precision instrument. Every AI pipeline, orchestration layer, algorithmic engine, and production backend is written in Python. The stack may vary at the edges. The core never does.</td>
+</tr>
+</table>
 
 ---
 
-## ⚠️ Operational Status
+## `02` &nbsp; The Decision Engine
+
+When a problem arrives, the first question isn't *how* — it's *what kind*.
 
 ```
-🔒  RESEARCH MODE — ACTIVE
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-All cognitive resources allocated to proprietary
-architectural research and systems development.
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+╔══════════════════════════════════════════════════════════╗
+║                    INCOMING PROBLEM                      ║
+╚══════════════════════╤═══════════════════════════════════╝
+                       │
+          ┌────────────▼────────────┐
+          │   CERTAINTY ANALYSIS    │
+          │   Is the domain fixed?  │
+          │   Is the signal clean?  │
+          └──────┬──────────┬───────┘
+                 │          │
+         YES ◄───┘          └───► NO
+                 │          │
+    ┌────────────▼──┐   ┌───▼────────────────┐
+    │ DETERMINISTIC │   │   LEARNING SYSTEM  │
+    │ LOGIC ENGINE  │   │   Paradigm-matched │
+    │ Precise rules │   │   to the data type │
+    └────────┬──────┘   └───────────┬────────┘
+             │                      │
+             └──────────┬───────────┘
+                        │
+           ┌────────────▼────────────┐
+           │    SYSTEM ARCHITECTURE  │
+           │   Python · Linux · Zero │
+           │      Architectural Debt │
+           └────────────┬────────────┘
+                        │
+                        ▼
+              ◈  PRODUCTION — NO GAPS  ◈
 ```
+
+> *The classification logic behind that fork is proprietary. It stays that way.*
+
+---
+
+## `03` &nbsp; Stack Topology
+
+```
+ ╭──────────────────────────────────────────────────────────────╮
+ │  LAYER          TECHNOLOGY          SIGNAL                   │
+ ├──────────────────────────────────────────────────────────────┤
+ │  BACKEND                                                     │
+ │  ·············  Python              ▓▓▓▓▓▓▓▓▓▓▓▓  Primary   │
+ │  ·············  AI / ML Systems     ▓▓▓▓▓▓▓▓▓▓░░  Precise   │
+ │  ·············  Algorithm Design    ▓▓▓▓▓▓▓▓▓░░░  Custom    │
+ ├──────────────────────────────────────────────────────────────┤
+ │  INFRASTRUCTURE                                              │
+ │  ·············  Linux               ▓▓▓▓▓▓▓▓▓▓▓▓  Native    │
+ │  ·············  Docker / CI/CD      ▓▓▓▓▓▓▓▓▓░░░  Hardened  │
+ ├──────────────────────────────────────────────────────────────┤
+ │  FRONTEND                                                    │
+ │  ·············  HTML · CSS · JS     ▓▓▓▓▓▓▓▓▓▓░░  Always    │
+ │  ·············  React / TypeScript  ▓▓▓▓▓▓░░░░░░  Earned    │
+ ├──────────────────────────────────────────────────────────────┤
+ │  ▓▓▓▓  SHADOW STACK                 ░░░░░░░░░░░░  Private   │
+ ╰──────────────────────────────────────────────────────────────╯
+```
+
+---
+
+## `04` &nbsp; Engineering Philosophy
+
+&nbsp;&nbsp;&nbsp;**`[01]` UNIX-NATIVE BY DESIGN**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Not deployed on Linux. *Architected* in Linux. Modular at every layer, minimal footprint, no debt baked in at the foundation.
+
+&nbsp;&nbsp;&nbsp;**`[02]` PRODUCTION MEANS PRODUCTION**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;What ships is auditable, load-tested, and repeatable. Stability is engineered in — not patched after the fact.
+
+&nbsp;&nbsp;&nbsp;**`[03]` KNOWLEDGE IS INFRASTRUCTURE**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Every system built compounds into a private body of work. The gaps close. The edge sharpens. No destination — only depth.
+
+---
+
+## `05` &nbsp; What I Build
+
+```
+  ┌─────────────────────────────────────────────────────────┐
+  │                                                         │
+  │   End-to-end enterprise AI systems.                     │
+  │                                                         │
+  │   Algorithm design → production infrastructure.         │
+  │   Real stakes. Real data. Real delivery.                │
+  │                                                         │
+  │   The R&D behind it remains private.                    │
+  │                                                         │
+  └─────────────────────────────────────────────────────────┘
+```
+
+---
+
+## `06` &nbsp; Occasionally
+
+When a concept earns public attention, I write about it or teach it.
+**Building, researching, and shipping always comes first.**
 
 ---
 
 <div align="center">
 
-[![Python](https://img.shields.io/badge/Python-Primary_Language-ffd43b?style=flat-square&logo=python&logoColor=black)](https://python.org)
-[![Linux](https://img.shields.io/badge/Linux-Native_Foundation-00ff88?style=flat-square&logo=linux&logoColor=black)](https://kernel.org)
-[![AI/ML](https://img.shields.io/badge/AI%2FML-Precision_Systems-00d4ff?style=flat-square&logo=pytorch&logoColor=white)](#)
+```
+╔═══════════════════════════════════════════════════╗
+║        ◈  STATUS: RESEARCH MODE — ACTIVE  ◈       ║
+╠═══════════════════════════════════════════════════╣
+║  Cognitive resources allocated to proprietary     ║
+║  architectural research and systems development.  ║
+╚═══════════════════════════════════════════════════╝
+```
+
+<br/>
+
+[![Python](https://img.shields.io/badge/Python-Primary_Language-ffd43b?style=flat-square&logo=python&logoColor=black)](https://python.org)&nbsp;
+[![Linux](https://img.shields.io/badge/Linux-Native_Foundation-00ff88?style=flat-square&logo=linux&logoColor=black)](https://kernel.org)&nbsp;
+[![AI/ML](https://img.shields.io/badge/AI%2FML-Precision_Systems-00d4ff?style=flat-square&logo=pytorch&logoColor=white)](#)&nbsp;
 [![Status](https://img.shields.io/badge/Status-Research_Mode-ff6b6b?style=flat-square)](#)
 
-*The surface feels effortless. The depth is yours to discover.*
+<br/>
+
+*The surface is intentional. What's underneath is the point.*
 
 </div>
 
-<!-- The key is in the pipeline, and the pipeline is in the mind. -->
+<!-- ── depth is the only metric that matters ── -->
