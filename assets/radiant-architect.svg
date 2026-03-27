@@ -237,26 +237,13 @@
         style="animation: msg1 12s linear infinite;">
     ENTERPRISE AI  ·  ALGORITHM ARCHITECTURE  ·  FULL-STACK SYSTEMS
   </text>
-  <!-- MSG 2 -->
-  <text x="450" y="190" text-anchor="middle"
-        font-family="'Courier New', Courier, monospace"
-        font-size="13" letter-spacing="2" fill="#777777"
-        style="animation: msg2 12s linear infinite;">
-    BUILDING  RADIANT MIND  ·  RADIANT FIT  ·  RADIANT AGRO
-  </text>
-  <!-- MSG 3 -->
-  <text x="450" y="190" text-anchor="middle"
-        font-family="'Courier New', Courier, monospace"
-        font-size="13" letter-spacing="2" fill="#777777"
-        style="animation: msg3 12s linear infinite;">
-    M.TECH CSE  ·  DATA SCIENCE  ·  UGC NET  ·  RESEARCH
-  </text>
+ 
   <!-- MSG 4 -->
   <text x="450" y="190" text-anchor="middle"
         font-family="'Courier New', Courier, monospace"
         font-size="13" letter-spacing="2" fill="#777777"
         style="animation: msg4 12s linear infinite;">
-    KASHMIR  ·  INDIA  ·  SOLVING REAL PROBLEMS WITH AI
+    KASHMIR-INDIA  ·  SOLVING REAL PROBLEMS WITH AI
   </text>
 
   <!-- Bottom divider -->
