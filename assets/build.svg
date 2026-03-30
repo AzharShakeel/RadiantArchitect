@@ -1,0 +1,64 @@
+<svg width="900" height="180" viewBox="0 0 900 180" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @keyframes f1 { 0%,100%{transform:translateY(0px) translateX(0px)} 50%{transform:translateY(-14px) translateX(4px)} }
+      @keyframes f2 { 0%,100%{transform:translateY(0px) translateX(0px)} 50%{transform:translateY(-20px) translateX(-6px)} }
+      @keyframes f3 { 0%,100%{transform:translateY(0px) translateX(0px)} 50%{transform:translateY(-10px) translateX(8px)} }
+      @keyframes f4 { 0%,100%{transform:translateY(0px) translateX(0px)} 50%{transform:translateY(-24px) translateX(-4px)} }
+      @keyframes f5 { 0%,100%{transform:translateY(0px) translateX(0px)} 50%{transform:translateY(-8px) translateX(6px)} }
+      @keyframes f6 { 0%,100%{transform:translateY(0px) translateX(0px)} 50%{transform:translateY(-18px) translateX(-8px)} }
+      @keyframes f7 { 0%,100%{transform:translateY(0px) translateX(0px)} 50%{transform:translateY(-12px) translateX(5px)} }
+      @keyframes f8 { 0%,100%{transform:translateY(0px) translateX(0px)} 50%{transform:translateY(-16px) translateX(-3px)} }
+      @keyframes pulse { 0%,100%{opacity:0.85; filter:drop-shadow(0 0 18px rgba(255,212,59,0.55)) drop-shadow(0 0 35px rgba(0,212,255,0.3))} 50%{opacity:1; filter:drop-shadow(0 0 28px rgba(255,212,59,0.75)) drop-shadow(0 0 55px rgba(0,212,255,0.45))} }
+      .b1{animation:f1 4.2s ease-in-out infinite}
+      .b2{animation:f2 6.1s ease-in-out infinite}
+      .b3{animation:f3 5.0s ease-in-out infinite}
+      .b4{animation:f4 7.3s ease-in-out infinite}
+      .b5{animation:f5 3.6s ease-in-out infinite}
+      .b6{animation:f6 5.8s ease-in-out infinite}
+      .b7{animation:f7 4.7s ease-in-out infinite}
+      .b8{animation:f8 6.4s ease-in-out infinite}
+      .b9{animation:f1 3.9s ease-in-out infinite 0.8s}
+      .b10{animation:f3 5.5s ease-in-out infinite 1.2s}
+      .b11{animation:f5 4.4s ease-in-out infinite 0.4s}
+      .b12{animation:f7 6.8s ease-in-out infinite 1.6s}
+      .title{animation:pulse 3.5s ease-in-out infinite}
+    </style>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffd43b"/>
+      <stop offset="40%" stop-color="#00d4ff"/>
+      <stop offset="100%" stop-color="#00ff88"/>
+    </linearGradient>
+    <radialGradient id="orb1" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#ffd43b" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#ffd43b" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb2" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#00d4ff" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#00d4ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb3" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#00ff88" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#00ff88" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb4" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#ff6b6b" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#ff6b6b" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="180" fill="#0d1117" rx="10"/>
+
+  <!-- Large background orbs -->
+  <circle class="b4" cx="90"  cy="90"  r="58" fill="url(#orb1)" stroke="#ffd43b" stroke-width="0.6" stroke-opacity="0.18"/>
+  <circle class="b2" cx="810" cy="90"  r="65" fill="url(#orb2)" stroke="#00d4ff" stroke-width="0.6" stroke-opacity="0.18"/>
+  <circle class="b6" cx="450" cy="20"  r="38" fill="url(#orb3)" stroke="#00ff88" stroke-width="0.5" stroke-opacity="0.15"/>
+  <circle class="b8" cx="450" cy="165" r="30" fill="url(#orb2)" stroke="#00d4ff" stroke-width="0.5" stroke-opacity="0.12"/>
+
+  <!-- Medium orbs -->
+  <circle class="b1"  cx="175" cy="140" r="32" fill="url(#orb2)" stroke="#00d4ff" stroke-width="0.5" stroke-opacity="0.2"/>
+  <circle class="b3"  cx="725" cy="45"  r="28" fill="url(#orb1)" stroke="#ffd43b" stroke-width="0.5" stroke-opacity="0.2"/>
+  <circle class="b5"  cx="310" cy="155" r="24" fill="url(#orb4)" stroke="#ff6b6b" stroke-width="0.5" stroke-opacity="0.18"/>
+  <circle class="b7"  cx="590" cy="148" r="26" fill="url(#orb3)" stroke="#00ff88" stroke-width="0.5" stroke-opacity="0.18"/>
+  <circle
