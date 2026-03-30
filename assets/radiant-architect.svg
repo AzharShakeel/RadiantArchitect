@@ -1,6 +1,5 @@
-<svg width="900" height="300" viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg">
+<svg width="900" height="390" viewBox="0 0 900 390" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Soft white glow for title only -->
     <filter id="titleGlow" x="-20%" y="-30%" width="140%" height="160%">
       <feGaussianBlur stdDeviation="5" result="b1"/>
       <feGaussianBlur stdDeviation="12" result="b2"/>
@@ -10,7 +9,6 @@
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
-    <!-- Subtle glow for name -->
     <filter id="nameGlow" x="-10%" y="-20%" width="120%" height="140%">
       <feGaussianBlur stdDeviation="3" result="b1"/>
       <feMerge>
@@ -18,254 +16,248 @@
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
-    <!-- Grid pattern dark -->
     <pattern id="grid" width="45" height="45" patternUnits="userSpaceOnUse">
       <path d="M 45 0 L 0 0 0 45" fill="none" stroke="#1e1e1e" stroke-width="0.6"/>
     </pattern>
-    <!-- Scan gradient grey -->
     <linearGradient id="scanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0"/>
-      <stop offset="50%" style="stop-color:#ffffff;stop-opacity:0.07"/>
+      <stop offset="0%"   style="stop-color:#ffffff;stop-opacity:0"/>
+      <stop offset="50%"  style="stop-color:#ffffff;stop-opacity:0.07"/>
       <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0"/>
     </linearGradient>
-    <!-- Border gradient dark -->
     <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#2a2a2a;stop-opacity:0"/>
-      <stop offset="40%" style="stop-color:#555555;stop-opacity:1"/>
-      <stop offset="60%" style="stop-color:#444444;stop-opacity:1"/>
+      <stop offset="0%"   style="stop-color:#2a2a2a;stop-opacity:0"/>
+      <stop offset="40%"  style="stop-color:#555555;stop-opacity:1"/>
+      <stop offset="60%"  style="stop-color:#444444;stop-opacity:1"/>
       <stop offset="100%" style="stop-color:#2a2a2a;stop-opacity:0"/>
     </linearGradient>
+    <radialGradient id="vig" cx="50%" cy="50%" r="70%">
+      <stop offset="0%"   style="stop-color:#161616;stop-opacity:0"/>
+      <stop offset="100%" style="stop-color:#050505;stop-opacity:0.8"/>
+    </radialGradient>
   </defs>
 
   <style>
-    /* Scan sweep */
     @keyframes scanSweep {
       0%   { transform: translateY(-5px); opacity: 0; }
       5%   { opacity: 1; }
       95%  { opacity: 1; }
-      100% { transform: translateY(305px); opacity: 0; }
+      100% { transform: translateY(395px); opacity: 0; }
     }
-    /* Title pulse */
     @keyframes titlePulse {
       0%, 100% { opacity: 1; }
-      48%       { opacity: 1; }
-      50%       { opacity: 0.65; }
-      52%       { opacity: 1; }
-      88%       { opacity: 1; }
-      90%       { opacity: 0.5; }
-      92%       { opacity: 1; }
+      48%  { opacity: 1; }
+      50%  { opacity: 0.65; }
+      52%  { opacity: 1; }
+      88%  { opacity: 1; }
+      90%  { opacity: 0.5; }
+      92%  { opacity: 1; }
     }
-    /* Corner flicker */
     @keyframes flicker {
       0%, 100% { opacity: 0.6; }
-      50%       { opacity: 0.3; }
-      80%       { opacity: 0.8; }
-      93%       { opacity: 0.2; }
-      95%       { opacity: 0.7; }
+      50%  { opacity: 0.3; }
+      80%  { opacity: 0.8; }
+      93%  { opacity: 0.2; }
+      95%  { opacity: 0.7; }
     }
-    /* Name slide in */
     @keyframes nameIn {
       0%   { opacity: 0; letter-spacing: 12px; }
       100% { opacity: 1; letter-spacing: 6px; }
     }
-    /* Border draw */
-    @keyframes borderDraw {
-      0%   { stroke-dashoffset: 2400; }
-      100% { stroke-dashoffset: 0; }
-    }
-    /* Rotating messages - 4 messages, each shows 3s out of 12s total */
     @keyframes msg1 {
-      0%   { opacity: 0; }
-      3%   { opacity: 1; }
-      22%  { opacity: 1; }
-      25%  { opacity: 0; }
-      100% { opacity: 0; }
+      0%  { opacity:0; } 3%  { opacity:1; } 22% { opacity:1; } 25% { opacity:0; } 100% { opacity:0; }
     }
     @keyframes msg2 {
-      0%   { opacity: 0; }
-      25%  { opacity: 0; }
-      28%  { opacity: 1; }
-      47%  { opacity: 1; }
-      50%  { opacity: 0; }
-      100% { opacity: 0; }
+      0%  { opacity:0; } 25% { opacity:0; } 28% { opacity:1; } 47% { opacity:1; } 50% { opacity:0; } 100% { opacity:0; }
     }
     @keyframes msg3 {
-      0%   { opacity: 0; }
-      50%  { opacity: 0; }
-      53%  { opacity: 1; }
-      72%  { opacity: 1; }
-      75%  { opacity: 0; }
-      100% { opacity: 0; }
+      0%  { opacity:0; } 50% { opacity:0; } 53% { opacity:1; } 72% { opacity:1; } 75% { opacity:0; } 100% { opacity:0; }
     }
     @keyframes msg4 {
-      0%   { opacity: 0; }
-      75%  { opacity: 0; }
-      78%  { opacity: 1; }
-      97%  { opacity: 1; }
-      100% { opacity: 0; }
+      0%  { opacity:0; } 75% { opacity:0; } 78% { opacity:1; } 97% { opacity:1; } 100% { opacity:0; }
     }
-    /* Particle drift */
     @keyframes drift1 {
       0%, 100% { transform: translate(0,0); opacity: 0.4; }
-      50%       { transform: translate(10px, -14px); opacity: 0.15; }
+      50%  { transform: translate(10px,-14px); opacity: 0.15; }
     }
     @keyframes drift2 {
       0%, 100% { transform: translate(0,0); opacity: 0.2; }
-      50%       { transform: translate(-8px, 10px); opacity: 0.5; }
+      50%  { transform: translate(-8px,10px); opacity: 0.5; }
     }
-    /* Divider extend */
-    @keyframes lineIn {
-      from { stroke-dashoffset: 700; }
-      to   { stroke-dashoffset: 0; }
-    }
-    /* RADIANT ARCHITECT letter spacing breathe */
-    @keyframes titleBreathe {
-      0%, 100% { letter-spacing: 8px; }
-      50%       { letter-spacing: 14px; }
-    }
-    /* Status dot blink */
     @keyframes dotBlink {
       0%, 100% { opacity: 1; }
-      50%       { opacity: 0; }
+      50%  { opacity: 0; }
+    }
+    @keyframes pillIn {
+      0%   { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    @keyframes pillPulse {
+      0%, 100% { stroke-opacity: 0.5; }
+      50%  { stroke-opacity: 1; }
     }
   </style>
 
-  <!-- Base background -->
-  <rect width="900" height="300" fill="#0c0c0c"/>
-  <!-- Grid -->
-  <rect width="900" height="300" fill="url(#grid)"/>
-  <!-- Vignette -->
-  <radialGradient id="vig" cx="50%" cy="50%" r="70%">
-    <stop offset="0%" style="stop-color:#161616;stop-opacity:0"/>
-    <stop offset="100%" style="stop-color:#050505;stop-opacity:0.8"/>
-  </radialGradient>
-  <rect width="900" height="300" fill="url(#vig)"/>
+  <!-- ─── BACKGROUND ─── -->
+  <rect width="900" height="390" fill="#0c0c0c"/>
+  <rect width="900" height="390" fill="url(#grid)"/>
+  <rect width="900" height="390" fill="url(#vig)"/>
 
-  <!-- Animated border -->
-  <rect x="10" y="10" width="880" height="280" rx="3" ry="3"
+  <!-- Outer border full height -->
+  <rect x="10" y="10" width="880" height="370" rx="3" ry="3"
         fill="none" stroke="url(#borderGrad)" stroke-width="1"
-        stroke-dasharray="2400" stroke-dashoffset="2400">
-    <animate attributeName="stroke-dashoffset" from="2400" to="0" dur="2.5s" fill="freeze"/>
+        stroke-dasharray="2600" stroke-dashoffset="2600">
+    <animate attributeName="stroke-dashoffset" from="2600" to="0" dur="2.5s" fill="freeze"/>
   </rect>
 
-  <!-- Corner TL -->
+  <!-- Corners -->
   <g style="animation: flicker 5s 0s infinite;">
     <line x1="10" y1="32" x2="10" y2="10" stroke="#4a4a4a" stroke-width="1.5"/>
     <line x1="10" y1="10" x2="32" y2="10" stroke="#4a4a4a" stroke-width="1.5"/>
     <rect x="10" y="10" width="3" height="3" fill="#666666"/>
   </g>
-  <!-- Corner TR -->
   <g style="animation: flicker 5s 1.2s infinite;">
     <line x1="890" y1="32" x2="890" y2="10" stroke="#4a4a4a" stroke-width="1.5"/>
     <line x1="890" y1="10" x2="868" y2="10" stroke="#4a4a4a" stroke-width="1.5"/>
     <rect x="887" y="10" width="3" height="3" fill="#666666"/>
   </g>
-  <!-- Corner BL -->
   <g style="animation: flicker 5s 0.6s infinite;">
-    <line x1="10" y1="268" x2="10" y2="290" stroke="#4a4a4a" stroke-width="1.5"/>
-    <line x1="10" y1="290" x2="32" y2="290" stroke="#4a4a4a" stroke-width="1.5"/>
-    <rect x="10" y="287" width="3" height="3" fill="#666666"/>
+    <line x1="10" y1="368" x2="10" y2="380" stroke="#4a4a4a" stroke-width="1.5"/>
+    <line x1="10" y1="380" x2="32" y2="380" stroke="#4a4a4a" stroke-width="1.5"/>
+    <rect x="10" y="377" width="3" height="3" fill="#666666"/>
   </g>
-  <!-- Corner BR -->
   <g style="animation: flicker 5s 1.8s infinite;">
-    <line x1="890" y1="268" x2="890" y2="290" stroke="#4a4a4a" stroke-width="1.5"/>
-    <line x1="890" y1="290" x2="868" y2="290" stroke="#4a4a4a" stroke-width="1.5"/>
-    <rect x="887" y="287" width="3" height="3" fill="#666666"/>
+    <line x1="890" y1="368" x2="890" y2="380" stroke="#4a4a4a" stroke-width="1.5"/>
+    <line x1="890" y1="380" x2="868" y2="380" stroke="#4a4a4a" stroke-width="1.5"/>
+    <rect x="887" y="377" width="3" height="3" fill="#666666"/>
   </g>
 
   <!-- Scan line -->
   <rect x="0" y="0" width="900" height="4" fill="url(#scanGrad)"
         style="animation: scanSweep 5s linear infinite;"/>
 
-  <!-- Floating particles -->
-  <circle cx="70" cy="55" r="1.5" fill="#3a3a3a" style="animation: drift1 6s ease-in-out infinite;"/>
-  <circle cx="830" cy="70" r="1"   fill="#3a3a3a" style="animation: drift2 7s ease-in-out infinite;"/>
-  <circle cx="130" cy="220" r="1.5" fill="#333" style="animation: drift1 5s ease-in-out 1s infinite;"/>
-  <circle cx="780" cy="230" r="1"   fill="#333" style="animation: drift2 8s ease-in-out 2s infinite;"/>
-  <circle cx="450" cy="28" r="1"    fill="#3a3a3a" style="animation: drift1 9s ease-in-out 0.5s infinite;"/>
+  <!-- Particles -->
+  <circle cx="70"  cy="55"  r="1.5" fill="#3a3a3a" style="animation: drift1 6s ease-in-out infinite;"/>
+  <circle cx="830" cy="70"  r="1"   fill="#3a3a3a" style="animation: drift2 7s ease-in-out infinite;"/>
+  <circle cx="130" cy="220" r="1.5" fill="#333"    style="animation: drift1 5s ease-in-out 1s infinite;"/>
+  <circle cx="780" cy="230" r="1"   fill="#333"    style="animation: drift2 8s ease-in-out 2s infinite;"/>
+  <circle cx="450" cy="28"  r="1"   fill="#3a3a3a" style="animation: drift1 9s ease-in-out 0.5s infinite;"/>
   <circle cx="220" cy="150" r="1"   fill="#2e2e2e" style="animation: drift2 6s ease-in-out 3s infinite;"/>
   <circle cx="680" cy="160" r="1"   fill="#2e2e2e" style="animation: drift1 7s ease-in-out 1.5s infinite;"/>
 
-  <!-- 3D depth shadow layers for title -->
-  <text x="455" y="116" text-anchor="middle"
-        font-family="'Courier New', Courier, monospace"
-        font-size="50" font-weight="bold" letter-spacing="8"
-        fill="#1a1a1a">RADIANT ARCHITECT</text>
-  <text x="453" y="114" text-anchor="middle"
-        font-family="'Courier New', Courier, monospace"
-        font-size="50" font-weight="bold" letter-spacing="8"
-        fill="#262626">RADIANT ARCHITECT</text>
-  <text x="451" y="112" text-anchor="middle"
-        font-family="'Courier New', Courier, monospace"
-        font-size="50" font-weight="bold" letter-spacing="8"
-        fill="#303030">RADIANT ARCHITECT</text>
+  <!-- ─── ZONE 1: TITLE + NAME + MESSAGES ─── -->
 
-  <!-- Main title — white glow only here -->
-  <text x="450" y="111" text-anchor="middle"
-        font-family="'Courier New', Courier, monospace"
+  <!-- 3D depth shadows -->
+  <text x="455" y="116" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="50" font-weight="bold" letter-spacing="8" fill="#1a1a1a">RADIANT ARCHITECT</text>
+  <text x="453" y="114" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="50" font-weight="bold" letter-spacing="8" fill="#262626">RADIANT ARCHITECT</text>
+  <text x="451" y="112" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="50" font-weight="bold" letter-spacing="8" fill="#303030">RADIANT ARCHITECT</text>
+
+  <!-- Main title -->
+  <text x="450" y="111" text-anchor="middle" font-family="'Courier New',Courier,monospace"
         font-size="50" font-weight="bold" letter-spacing="8"
         fill="#e8e8e8" filter="url(#titleGlow)"
-        style="animation: titlePulse 6s infinite;">
-    RADIANT ARCHITECT
-  </text>
+        style="animation: titlePulse 6s infinite;">RADIANT ARCHITECT</text>
 
-  <!-- Name line — AZHAR SHAKEEL -->
-  <text x="450" y="143" text-anchor="middle"
-        font-family="'Courier New', Courier, monospace"
-        font-size="13" letter-spacing="6"
-        fill="#606060" filter="url(#nameGlow)"
-        style="animation: nameIn 1.5s ease 0.8s both;">
-    AZHAR  SHAKEEL
-  </text>
+  <!-- Name -->
+  <text x="450" y="143" text-anchor="middle" font-family="'Courier New',Courier,monospace"
+        font-size="13" letter-spacing="6" fill="#606060" filter="url(#nameGlow)"
+        style="animation: nameIn 1.5s ease 0.8s both;">AZHAR  SHAKEEL</text>
 
   <!-- Top divider -->
-  <line x1="120" y1="158" x2="780" y2="158"
-        stroke="#2a2a2a" stroke-width="1"
+  <line x1="120" y1="158" x2="780" y2="158" stroke="#2a2a2a" stroke-width="1"
         stroke-dasharray="700" stroke-dashoffset="700">
     <animate attributeName="stroke-dashoffset" from="700" to="0" dur="1.8s" begin="0.5s" fill="freeze"/>
   </line>
-  <!-- Small tick marks on divider -->
   <line x1="120" y1="155" x2="120" y2="161" stroke="#3a3a3a" stroke-width="1"/>
   <line x1="450" y1="155" x2="450" y2="161" stroke="#3a3a3a" stroke-width="1"/>
   <line x1="780" y1="155" x2="780" y2="161" stroke="#3a3a3a" stroke-width="1"/>
 
-  <!-- Rotating messages container -->
-  <!-- MSG 1 -->
-  <text x="450" y="190" text-anchor="middle"
-        font-family="'Courier New', Courier, monospace"
+  <!-- Rotating messages -->
+  <text x="450" y="190" text-anchor="middle" font-family="'Courier New',Courier,monospace"
         font-size="13" letter-spacing="2" fill="#777777"
-        style="animation: msg1 12s linear infinite;">
-    ENTERPRISE AI  ·  ALGORITHM ARCHITECTURE  ·  FULL-STACK SYSTEMS
-  </text>
- 
-  <!-- MSG 4 -->
-  <text x="450" y="190" text-anchor="middle"
-        font-family="'Courier New', Courier, monospace"
+        style="animation: msg1 12s linear infinite;">ENTERPRISE AI  ·  ALGORITHM ARCHITECTURE  ·  FULL-STACK SYSTEMS</text>
+  <text x="450" y="190" text-anchor="middle" font-family="'Courier New',Courier,monospace"
         font-size="13" letter-spacing="2" fill="#777777"
-        style="animation: msg4 12s linear infinite;">
-    KASHMIR-INDIA  ·  SOLVING REAL PROBLEMS WITH AI
-  </text>
+        style="animation: msg2 12s linear infinite;"></text>
+  <text x="450" y="190" text-anchor="middle" font-family="'Courier New',Courier,monospace"
+        font-size="13" letter-spacing="2" fill="#777777"
+        style="animation: msg3 12s linear infinite;"></text>
+  <text x="450" y="190" text-anchor="middle" font-family="'Courier New',Courier,monospace"
+        font-size="13" letter-spacing="2" fill="#777777"
+        style="animation: msg4 12s linear infinite;">KASHMIR  ·  INDIA  ·  SOLVING REAL PROBLEMS WITH AI</text>
 
-  <!-- Bottom divider -->
-  <line x1="200" y1="210" x2="700" y2="210"
-        stroke="#222222" stroke-width="1"
+  <!-- Mid divider -->
+  <line x1="200" y1="210" x2="700" y2="210" stroke="#222222" stroke-width="1"
         stroke-dasharray="500" stroke-dashoffset="500">
     <animate attributeName="stroke-dashoffset" from="500" to="0" dur="1.8s" begin="1s" fill="freeze"/>
   </line>
 
-  <!-- Status line -->
-  <g>
-    <!-- Blinking dot -->
-    <circle cx="380" cy="240" r="3.5" fill="#555555"
-            style="animation: dotBlink 1.2s ease-in-out infinite;"/>
-    <text x="395" y="245" text-anchor="start"
-          font-family="'Courier New', Courier, monospace"
-          font-size="12" letter-spacing="3" fill="#4a4a4a">
-      STATUS: RESEARCH MODE — ACTIVE
-    </text>
-  </g>
+  <!-- Status -->
+  <circle cx="380" cy="240" r="3.5" fill="#555555"
+          style="animation: dotBlink 1.2s ease-in-out infinite;"/>
+  <text x="395" y="245" text-anchor="start" font-family="'Courier New',Courier,monospace"
+        font-size="12" letter-spacing="3" fill="#4a4a4a">STATUS: RESEARCH MODE — ACTIVE</text>
 
-  <!-- Meta labels -->
-  <text x="24" y="278" font-family="monospace" font-size="8" fill="#2e2e2e" letter-spacing="1">SYS::ONLINE</text>
-  <text x="840" y="278" font-family="monospace" font-size="8" fill="#2e2e2e" letter-spacing="1">v2.0.26</text>
+  <!-- ─── ZONE 2: SKILL PILLS ─── -->
+  <!-- Flows naturally — no divider -->
+
+  <!-- ROW 1 — AI Core (6 pills) -->
+  <!-- Total width: 95+85+140+120+105+72 = 617 + gaps 5×8=40 → 657. Start=(900-657)/2=121.5→122 -->
+
+  <rect x="122" y="264" width="95"  height="26" rx="13" fill="#131313" stroke="#2a2a2a" stroke-width="1" style="animation: pillIn 0.6s ease 1.2s both;"/>
+  <text x="169" y="281" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="11" fill="#787878" style="animation: pillIn 0.6s ease 1.2s both;">🐍 Python</text>
+
+  <rect x="225" y="264" width="85"  height="26" rx="13" fill="#131313" stroke="#2a2a2a" stroke-width="1" style="animation: pillIn 0.6s ease 1.3s both;"/>
+  <text x="267" y="281" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="11" fill="#787878" style="animation: pillIn 0.6s ease 1.3s both;">🤖 AI/ML</text>
+
+  <rect x="318" y="264" width="140" height="26" rx="13" fill="#131313" stroke="#2a2a2a" stroke-width="1" style="animation: pillIn 0.6s ease 1.4s both;"/>
+  <text x="388" y="281" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="11" fill="#787878" style="animation: pillIn 0.6s ease 1.4s both;">🧠 Deep Learning</text>
+
+  <rect x="466" y="264" width="120" height="26" rx="13" fill="#131313" stroke="#2a2a2a" stroke-width="1" style="animation: pillIn 0.6s ease 1.5s both;"/>
+  <text x="526" y="281" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="11" fill="#787878" style="animation: pillIn 0.6s ease 1.5s both;">🔬 TensorFlow</text>
+
+  <rect x="594" y="264" width="105" height="26" rx="13" fill="#131313" stroke="#2a2a2a" stroke-width="1" style="animation: pillIn 0.6s ease 1.6s both;"/>
+  <text x="646" y="281" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="11" fill="#787878" style="animation: pillIn 0.6s ease 1.6s both;">🔥 PyTorch</text>
+
+  <rect x="707" y="264" width="72"  height="26" rx="13" fill="#131313" stroke="#2a2a2a" stroke-width="1" style="animation: pillIn 0.6s ease 1.7s both;"/>
+  <text x="743" y="281" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="11" fill="#787878" style="animation: pillIn 0.6s ease 1.7s both;">⚗️ JAX</text>
+
+  <!-- ROW 2 — Data & Libraries (5 pills) -->
+  <!-- Total: 90+95+130+100+95=510 + gaps 4×8=32 → 542. Start=(900-542)/2=179 -->
+
+  <rect x="179" y="300" width="90"  height="26" rx="13" fill="#131313" stroke="#2a2a2a" stroke-width="1" style="animation: pillIn 0.6s ease 1.4s both;"/>
+  <text x="224" y="317" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="11" fill="#787878" style="animation: pillIn 0.6s ease 1.4s both;">📊 NumPy</text>
+
+  <rect x="277" y="300" width="95"  height="26" rx="13" fill="#131313" stroke="#2a2a2a" stroke-width="1" style="animation: pillIn 0.6s ease 1.5s both;"/>
+  <text x="324" y="317" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="11" fill="#787878" style="animation: pillIn 0.6s ease 1.5s both;">🐼 Pandas</text>
+
+  <rect x="380" y="300" width="130" height="26" rx="13" fill="#131313" stroke="#2a2a2a" stroke-width="1" style="animation: pillIn 0.6s ease 1.6s both;"/>
+  <text x="445" y="317" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="11" fill="#787878" style="animation: pillIn 0.6s ease 1.6s both;">🔬 Scikit-learn</text>
+
+  <rect x="518" y="300" width="100" height="26" rx="13" fill="#131313" stroke="#2a2a2a" stroke-width="1" style="animation: pillIn 0.6s ease 1.7s both;"/>
+  <text x="568" y="317" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="11" fill="#787878" style="animation: pillIn 0.6s ease 1.7s both;">⚡ FastAPI</text>
+
+  <rect x="626" y="300" width="95"  height="26" rx="13" fill="#131313" stroke="#2a2a2a" stroke-width="1" style="animation: pillIn 0.6s ease 1.8s both;"/>
+  <text x="673" y="317" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="11" fill="#787878" style="animation: pillIn 0.6s ease 1.8s both;">🐳 Docker</text>
+
+  <!-- ROW 3 — Web & Infra (6 pills) -->
+  <!-- Total: 110+130+120+90+72+85=607 + gaps 5×8=40 → 647. Start=(900-647)/2=126.5→127 -->
+
+  <rect x="127" y="336" width="110" height="26" rx="13" fill="#131313" stroke="#2a2a2a" stroke-width="1" style="animation: pillIn 0.6s ease 1.6s both;"/>
+  <text x="182" y="353" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="11" fill="#787878" style="animation: pillIn 0.6s ease 1.6s both;">🌐 Full-Stack</text>
+
+  <rect x="245" y="336" width="130" height="26" rx="13" fill="#131313" stroke="#2a2a2a" stroke-width="1" style="animation: pillIn 0.6s ease 1.7s both;"/>
+  <text x="310" y="353" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="11" fill="#787878" style="animation: pillIn 0.6s ease 1.7s both;">💻 HTML/CSS/JS</text>
+
+  <rect x="383" y="336" width="120" height="26" rx="13" fill="#131313" stroke="#2a2a2a" stroke-width="1" style="animation: pillIn 0.6s ease 1.8s both;"/>
+  <text x="443" y="353" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="11" fill="#787878" style="animation: pillIn 0.6s ease 1.8s both;">📘 TypeScript</text>
+
+  <rect x="511" y="336" width="90"  height="26" rx="13" fill="#131313" stroke="#2a2a2a" stroke-width="1" style="animation: pillIn 0.6s ease 1.9s both;"/>
+  <text x="556" y="353" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="11" fill="#787878" style="animation: pillIn 0.6s ease 1.9s both;">🐧 Linux</text>
+
+  <rect x="609" y="336" width="72"  height="26" rx="13" fill="#131313" stroke="#2a2a2a" stroke-width="1" style="animation: pillIn 0.6s ease 2.0s both;"/>
+  <text x="645" y="353" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="11" fill="#787878" style="animation: pillIn 0.6s ease 2.0s both;">🔀 Git</text>
+
+  <rect x="689" y="336" width="85"  height="26" rx="13" fill="#131313" stroke="#2a2a2a" stroke-width="1" style="animation: pillIn 0.6s ease 2.1s both;"/>
+  <text x="731" y="353" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="11" fill="#787878" style="animation: pillIn 0.6s ease 2.1s both;">⚙️ CI/CD</text>
+
 </svg>
