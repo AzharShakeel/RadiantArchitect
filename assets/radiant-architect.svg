@@ -183,7 +183,7 @@
         style="animation: msg3 12s linear infinite;"></text>
   <text x="450" y="190" text-anchor="middle" font-family="'Courier New',Courier,monospace"
         font-size="13" letter-spacing="2" fill="#777777"
-        style="animation: msg4 12s linear infinite;">KASHMIR  ·  INDIA  ·  SOLVING REAL PROBLEMS WITH AI</text>
+        style="animation: msg4 12s linear infinite;">KASHMIR-INDIA  ·  SOLVING REAL PROBLEMS WITH AI</text>
 
   <!-- Mid divider -->
   <line x1="200" y1="210" x2="700" y2="210" stroke="#222222" stroke-width="1"
