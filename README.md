@@ -5,7 +5,7 @@
 
 <!-- ============================================================
      SYSTEMS ONLINE. DEPTH: CLASSIFIED.
-     © 2026 RADIANT ARCHITECT — CC BY-NC 4.0
+     © 2026 Azhar Shakeel — CC BY-NC 4.0
      Unauthorized reuse is prohibited.
      ============================================================ -->
 
@@ -173,7 +173,7 @@ Everything else stays in the build.
 ```
 ╔══════════════════════════════════════════════════════════════╗
 ║                  © 2026 AZHAR SHAKEEL                  ║
-║             github.com/AZHARSHAKEEL                      ║
+║             github.com/Azhar Shakeel                      ║
 ╠══════════════════════════════════════════════════════════════╣
 ║  This profile, its design, structure, and content are        ║
 ║  original work. Licensed under CC BY-NC 4.0.                 ║
