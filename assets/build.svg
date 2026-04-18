@@ -81,7 +81,7 @@
   </g>
 
   <!-- ASCII art text - monospace centered -->
-  <text text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="17.5" fill="url(#rainbowText)"
+  <text text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="17.5" fill="#000000"
         style="animation: textGlow 3s ease-in-out infinite;">
     <tspan x="450" dy="78">██████╗ ██╗   ██╗██╗██╗     ██████╗</tspan>
     <tspan x="450" dy="22">██╔══██╗██║   ██║██║██║     ██╔══██╗</tspan>

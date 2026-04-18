@@ -18,6 +18,8 @@
 
 *Protected under the Creative Commons Attribution-NonCommercial 4.0 International License.*
 
+*Brand/design assets are additionally protected under reserved manual terms — see [NOTICE](NOTICE.md) and [ASSET_LICENSE](ASSET_LICENSE.md).*
+
 </div>
 
 ---
@@ -163,7 +165,7 @@ This work is protected under the Creative Commons Attribution-NonCommercial 4.0 
 
 <br/>
 
-*Protected under CC BY-NC 4.0 — see [LICENSE](LICENSE).*
+*Protected under CC BY-NC 4.0 — see [LICENSE](LICENSE). Reserved branding terms: [NOTICE](NOTICE.md) · [ASSET_LICENSE](ASSET_LICENSE.md).*
 
 <br/>
 
