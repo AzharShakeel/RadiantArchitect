@@ -8,14 +8,21 @@
       </feMerge>
     </filter>
     <linearGradient id="bubbleBorder" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%"   style="stop-color:#3a3a3a;stop-opacity:1"/>
-      <stop offset="50%"  style="stop-color:#2a2a2a;stop-opacity:1"/>
-      <stop offset="100%" style="stop-color:#3a3a3a;stop-opacity:1"/>
+      <stop offset="0%"   style="stop-color:#1a1a1a;stop-opacity:1"/>
+      <stop offset="50%"  style="stop-color:#111111;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:1"/>
     </linearGradient>
     <radialGradient id="cardBg" cx="50%" cy="50%" r="50%">
-      <stop offset="0%"   style="stop-color:#161616;stop-opacity:1"/>
-      <stop offset="100%" style="stop-color:#0e0e0e;stop-opacity:1"/>
+      <stop offset="0%"   style="stop-color:#ececec;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#fafafa;stop-opacity:1"/>
     </radialGradient>
+    <linearGradient id="rainbowText" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00d4ff"/>
+      <stop offset="25%" stop-color="#00ff88"/>
+      <stop offset="50%" stop-color="#ffd43b"/>
+      <stop offset="75%" stop-color="#ff6b6b"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
   </defs>
 
   <style>
@@ -36,11 +43,11 @@
   </style>
 
   <!-- Outer background -->
-  <rect width="900" height="220" fill="#0a0a0a"/>
+  <rect width="900" height="220" fill="#ffffff"/>
 
   <!-- Bubble glow behind card -->
   <rect x="40" y="20" width="820" height="180" rx="18" ry="18"
-        fill="#1a1a1a" opacity="0.6" filter="url(#cardGlow)"/>
+        fill="#e4e4e4" opacity="0.6" filter="url(#cardGlow)"/>
 
   <!-- Main card bubble -->
   <rect x="44" y="24" width="812" height="172" rx="14" ry="14"
@@ -50,31 +57,31 @@
 
   <!-- Inner subtle border -->
   <rect x="50" y="30" width="800" height="160" rx="10" ry="10"
-        fill="none" stroke="#222222" stroke-width="0.5"/>
+        fill="none" stroke="#1a1a1a" stroke-width="0.5"/>
 
   <!-- Corner accents TL -->
   <g style="animation: cornerBlink 5s infinite;">
-    <line x1="44" y1="60" x2="44" y2="38" stroke="#484848" stroke-width="1.5"/>
-    <line x1="44" y1="38" x2="70" y2="38" stroke="#484848" stroke-width="1.5"/>
+    <line x1="44" y1="60" x2="44" y2="38" stroke="#353535" stroke-width="1.5"/>
+    <line x1="44" y1="38" x2="70" y2="38" stroke="#353535" stroke-width="1.5"/>
   </g>
   <!-- Corner accents TR -->
   <g style="animation: cornerBlink 5s 1s infinite;">
-    <line x1="856" y1="60" x2="856" y2="38" stroke="#484848" stroke-width="1.5"/>
-    <line x1="856" y1="38" x2="830" y2="38" stroke="#484848" stroke-width="1.5"/>
+    <line x1="856" y1="60" x2="856" y2="38" stroke="#353535" stroke-width="1.5"/>
+    <line x1="856" y1="38" x2="830" y2="38" stroke="#353535" stroke-width="1.5"/>
   </g>
   <!-- Corner accents BL -->
   <g style="animation: cornerBlink 5s 0.5s infinite;">
-    <line x1="44" y1="160" x2="44" y2="182" stroke="#484848" stroke-width="1.5"/>
-    <line x1="44" y1="182" x2="70" y2="182" stroke="#484848" stroke-width="1.5"/>
+    <line x1="44" y1="160" x2="44" y2="182" stroke="#353535" stroke-width="1.5"/>
+    <line x1="44" y1="182" x2="70" y2="182" stroke="#353535" stroke-width="1.5"/>
   </g>
   <!-- Corner accents BR -->
   <g style="animation: cornerBlink 5s 1.5s infinite;">
-    <line x1="856" y1="160" x2="856" y2="182" stroke="#484848" stroke-width="1.5"/>
-    <line x1="856" y1="182" x2="830" y2="182" stroke="#484848" stroke-width="1.5"/>
+    <line x1="856" y1="160" x2="856" y2="182" stroke="#353535" stroke-width="1.5"/>
+    <line x1="856" y1="182" x2="830" y2="182" stroke="#353535" stroke-width="1.5"/>
   </g>
 
   <!-- ASCII art text - monospace centered -->
-  <text text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="17.5" fill="#cccccc"
+  <text text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="17.5" fill="url(#rainbowText)"
         style="animation: textGlow 3s ease-in-out infinite;">
     <tspan x="450" dy="78">██████╗ ██╗   ██╗██╗██╗     ██████╗</tspan>
     <tspan x="450" dy="22">██╔══██╗██║   ██║██║██║     ██╔══██╗</tspan>

@@ -14,6 +14,10 @@
 
 *The foundation holds. The intelligence compounds. The work speaks.*
 
+[![License](https://img.shields.io/badge/License-CC_BY--NC_4.0-blue?style=flat-square)](LICENSE)
+
+*Protected under the Creative Commons Attribution-NonCommercial 4.0 International License.*
+
 </div>
 
 ---
@@ -88,40 +92,8 @@ When a problem arrives, the first question isn't *how* — it's *what kind*.
 
 ## `03` &nbsp; Stack Topology
 
-<p align="center"><strong><code>BACKEND</code></strong></p>
-
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-Primary-ffd43b?style=for-the-badge&logo=python&logoColor=black" alt="Python">
-  &nbsp;
-  <img src="https://img.shields.io/badge/AI--ML_Systems-Precise-00d4ff?style=for-the-badge&logo=pytorch&logoColor=white" alt="AI/ML Systems">
-  &nbsp;
-  <img src="https://img.shields.io/badge/Algorithm_Design-Custom-00ff88?style=for-the-badge" alt="Algorithm Design">
-</p>
-
-<p align="center"><strong><code>INFRASTRUCTURE</code></strong></p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Linux-Native-00ff88?style=for-the-badge&logo=linux&logoColor=black" alt="Linux">
-  &nbsp;
-  <img src="https://img.shields.io/badge/Docker_CI--CD-Hardened-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker / CI/CD">
-</p>
-
-<p align="center"><strong><code>FRONTEND</code></strong></p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/HTML-Always-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML">
-  &nbsp;
-  <img src="https://img.shields.io/badge/CSS-Always-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS">
-  &nbsp;
-  <img src="https://img.shields.io/badge/JavaScript-Always-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
-  &nbsp;
-  <img src="https://img.shields.io/badge/React_TypeScript-Earned-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React / TypeScript">
-</p>
-
-<p align="center"><strong><code>▓▓▓▓ SHADOW STACK</code></strong></p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/SHADOW_STACK-Private-1a1a1a?style=for-the-badge" alt="Shadow Stack">
+  <img src="assets/stack.svg" width="100%" alt="Stack Topology">
 </p>
 
 ---
@@ -166,6 +138,8 @@ When a problem arrives, the first question isn't *how* — it's *what kind*.
 When a concept earns public attention, I write about it or teach it.
 **Building, researching, and shipping always comes first.**
 
+This work is protected under the Creative Commons Attribution-NonCommercial 4.0 International License.
+
 ---
 
 <div align="center">
@@ -186,6 +160,10 @@ When a concept earns public attention, I write about it or teach it.
 [![Linux](https://img.shields.io/badge/Linux-Native_Foundation-00ff88?style=flat-square&logo=linux&logoColor=black)](https://kernel.org)&nbsp;
 [![AI/ML](https://img.shields.io/badge/AI--ML-Precision_Systems-00d4ff?style=flat-square&logo=pytorch&logoColor=white)](#)&nbsp;
 [![Status](https://img.shields.io/badge/Status-Research_Mode-ff6b6b?style=flat-square)](#)
+
+<br/>
+
+*Protected under CC BY-NC 4.0 — see [LICENSE](LICENSE).*
 
 <br/>
 

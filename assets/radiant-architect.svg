@@ -17,7 +17,7 @@
       </feMerge>
     </filter>
     <pattern id="grid" width="45" height="45" patternUnits="userSpaceOnUse">
-      <path d="M 45 0 L 0 0 0 45" fill="none" stroke="#1e1e1e" stroke-width="0.6"/>
+      <path d="M 45 0 L 0 0 0 45" fill="none" stroke="#d6d6d6" stroke-width="0.6"/>
     </pattern>
     <linearGradient id="scanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%"   stop-color="#ffffff" stop-opacity="0"/>
@@ -25,14 +25,14 @@
       <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
     </linearGradient>
     <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%"   stop-color="#2a2a2a" stop-opacity="0"/>
-      <stop offset="40%"  stop-color="#555555" stop-opacity="1"/>
-      <stop offset="60%"  stop-color="#444444" stop-opacity="1"/>
-      <stop offset="100%" stop-color="#2a2a2a" stop-opacity="0"/>
+      <stop offset="0%"   stop-color="#111111" stop-opacity="0"/>
+      <stop offset="40%"  stop-color="#111111" stop-opacity="1"/>
+      <stop offset="60%"  stop-color="#303030" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#111111" stop-opacity="0"/>
     </linearGradient>
     <radialGradient id="vig" cx="50%" cy="50%" r="70%">
-      <stop offset="0%"   stop-color="#161616" stop-opacity="0"/>
-      <stop offset="100%" stop-color="#050505" stop-opacity="0.8"/>
+      <stop offset="0%"   stop-color="#ececec" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.8"/>
     </radialGradient>
     <linearGradient id="nameColor" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%"   stop-color="#00d4ff"/>
@@ -86,7 +86,7 @@
   </style>
 
   <!-- BACKGROUND -->
-  <rect width="800" height="390" fill="#0c0c0c"/>
+  <rect width="800" height="390" fill="#ffffff"/>
   <rect width="800" height="390" fill="url(#grid)"/>
   <rect width="800" height="390" fill="url(#vig)"/>
 
@@ -99,24 +99,24 @@
 
   <!-- Corners -->
   <g style="animation:flicker 5s 0s infinite">
-    <line x1="10" y1="32" x2="10" y2="10" stroke="#4a4a4a" stroke-width="1.5"/>
-    <line x1="10" y1="10" x2="32" y2="10" stroke="#4a4a4a" stroke-width="1.5"/>
-    <rect x="10" y="10" width="3" height="3" fill="#666"/>
+    <line x1="10" y1="32" x2="10" y2="10" stroke="#363636" stroke-width="1.5"/>
+    <line x1="10" y1="10" x2="32" y2="10" stroke="#363636" stroke-width="1.5"/>
+    <rect x="10" y="10" width="3" height="3" fill="#1a1a1a"/>
   </g>
   <g style="animation:flicker 5s 1.2s infinite">
-    <line x1="790" y1="32" x2="790" y2="10" stroke="#4a4a4a" stroke-width="1.5"/>
-    <line x1="790" y1="10" x2="768" y2="10" stroke="#4a4a4a" stroke-width="1.5"/>
-    <rect x="787" y="10" width="3" height="3" fill="#666"/>
+    <line x1="790" y1="32" x2="790" y2="10" stroke="#363636" stroke-width="1.5"/>
+    <line x1="790" y1="10" x2="768" y2="10" stroke="#363636" stroke-width="1.5"/>
+    <rect x="787" y="10" width="3" height="3" fill="#1a1a1a"/>
   </g>
   <g style="animation:flicker 5s 0.6s infinite">
-    <line x1="10" y1="368" x2="10" y2="380" stroke="#4a4a4a" stroke-width="1.5"/>
-    <line x1="10" y1="380" x2="32" y2="380" stroke="#4a4a4a" stroke-width="1.5"/>
-    <rect x="10" y="377" width="3" height="3" fill="#666"/>
+    <line x1="10" y1="368" x2="10" y2="380" stroke="#363636" stroke-width="1.5"/>
+    <line x1="10" y1="380" x2="32" y2="380" stroke="#363636" stroke-width="1.5"/>
+    <rect x="10" y="377" width="3" height="3" fill="#1a1a1a"/>
   </g>
   <g style="animation:flicker 5s 1.8s infinite">
-    <line x1="790" y1="368" x2="790" y2="380" stroke="#4a4a4a" stroke-width="1.5"/>
-    <line x1="790" y1="380" x2="768" y2="380" stroke="#4a4a4a" stroke-width="1.5"/>
-    <rect x="787" y="377" width="3" height="3" fill="#666"/>
+    <line x1="790" y1="368" x2="790" y2="380" stroke="#363636" stroke-width="1.5"/>
+    <line x1="790" y1="380" x2="768" y2="380" stroke="#363636" stroke-width="1.5"/>
+    <rect x="787" y="377" width="3" height="3" fill="#1a1a1a"/>
   </g>
 
   <!-- Scan line -->
@@ -124,13 +124,13 @@
         style="animation:scanSweep 5s linear infinite"/>
 
   <!-- Particles -->
-  <circle cx="60"  cy="55"  r="1.5" fill="#3a3a3a" style="animation:drift1 6s ease-in-out infinite"/>
-  <circle cx="740" cy="70"  r="1"   fill="#3a3a3a" style="animation:drift2 7s ease-in-out infinite"/>
-  <circle cx="120" cy="220" r="1.5" fill="#333"    style="animation:drift1 5s ease-in-out 1s infinite"/>
-  <circle cx="680" cy="230" r="1"   fill="#333"    style="animation:drift2 8s ease-in-out 2s infinite"/>
-  <circle cx="400" cy="28"  r="1"   fill="#3a3a3a" style="animation:drift1 9s ease-in-out 0.5s infinite"/>
-  <circle cx="200" cy="150" r="1"   fill="#2e2e2e" style="animation:drift2 6s ease-in-out 3s infinite"/>
-  <circle cx="600" cy="160" r="1"   fill="#2e2e2e" style="animation:drift1 7s ease-in-out 1.5s infinite"/>
+  <circle cx="60"  cy="55"  r="1.5" fill="#1a1a1a" style="animation:drift1 6s ease-in-out infinite"/>
+  <circle cx="740" cy="70"  r="1"   fill="#1a1a1a" style="animation:drift2 7s ease-in-out infinite"/>
+  <circle cx="120" cy="220" r="1.5" fill="#1f1f1f"    style="animation:drift1 5s ease-in-out 1s infinite"/>
+  <circle cx="680" cy="230" r="1"   fill="#1f1f1f"    style="animation:drift2 8s ease-in-out 2s infinite"/>
+  <circle cx="400" cy="28"  r="1"   fill="#1a1a1a" style="animation:drift1 9s ease-in-out 0.5s infinite"/>
+  <circle cx="200" cy="150" r="1"   fill="#1f1f1f" style="animation:drift2 6s ease-in-out 3s infinite"/>
+  <circle cx="600" cy="160" r="1"   fill="#1f1f1f" style="animation:drift1 7s ease-in-out 1.5s infinite"/>
 
   <!-- NAME — glow layer -->
   <text x="400" y="112" text-anchor="middle"
@@ -148,95 +148,95 @@
         style="animation:fadeIn 1.2s ease 0.4s both">AZHAR SHAKEEL</text>
 
   <!-- Top divider -->
-  <line x1="100" y1="134" x2="700" y2="134" stroke="#2a2a2a" stroke-width="1"
+  <line x1="100" y1="134" x2="700" y2="134" stroke="#111111" stroke-width="1"
         stroke-dasharray="600" stroke-dashoffset="600">
     <animate attributeName="stroke-dashoffset" from="600" to="0" dur="1.8s" begin="0.5s" fill="freeze"/>
   </line>
-  <line x1="100" y1="131" x2="100" y2="137" stroke="#3a3a3a" stroke-width="1"/>
-  <line x1="400" y1="131" x2="400" y2="137" stroke="#3a3a3a" stroke-width="1"/>
-  <line x1="700" y1="131" x2="700" y2="137" stroke="#3a3a3a" stroke-width="1"/>
+  <line x1="100" y1="131" x2="100" y2="137" stroke="#1a1a1a" stroke-width="1"/>
+  <line x1="400" y1="131" x2="400" y2="137" stroke="#1a1a1a" stroke-width="1"/>
+  <line x1="700" y1="131" x2="700" y2="137" stroke="#1a1a1a" stroke-width="1"/>
 
   <!-- Rotating messages -->
   <text x="400" y="162" text-anchor="middle"
         font-family="'Courier New',Courier,monospace"
-        font-size="15" letter-spacing="2" fill="#777"
+        font-size="15" letter-spacing="2" fill="#111111"
         style="animation:msg1 12s linear infinite">ENTERPRISE AI  ·  ALGORITHM ARCHITECTURE  ·  FULL-STACK SYSTEMS</text>
   <text x="400" y="162" text-anchor="middle"
         font-family="'Courier New',Courier,monospace"
-        font-size="15" letter-spacing="2" fill="#777"
+        font-size="15" letter-spacing="2" fill="#111111"
         style="animation:msg2 12s linear infinite">SOLVING REAL PROBLEMS WITH AI</text>
 
   <!-- Mid divider -->
-  <line x1="180" y1="182" x2="620" y2="182" stroke="#222" stroke-width="1"
+  <line x1="180" y1="182" x2="620" y2="182" stroke="#1a1a1a" stroke-width="1"
         stroke-dasharray="440" stroke-dashoffset="440">
     <animate attributeName="stroke-dashoffset" from="440" to="0" dur="1.8s" begin="1s" fill="freeze"/>
   </line>
 
   <!-- Status -->
-  <circle cx="310" cy="210" r="4" fill="#555"
+  <circle cx="310" cy="210" r="4" fill="#111111"
           style="animation:dotBlink 1.2s ease-in-out infinite"/>
   <text x="325" y="215" text-anchor="start"
         font-family="'Courier New',Courier,monospace"
-        font-size="14" letter-spacing="3" fill="#4a4a4a">STATUS: RESEARCH MODE — ACTIVE</text>
+        font-size="14" letter-spacing="3" fill="#363636">STATUS: RESEARCH MODE — ACTIVE</text>
 
   <!-- ROW 1 — AI Core (6 pills) centered across 800 -->
-  <rect x="116" y="238" width="80"  height="26" rx="13" fill="#131313" stroke="#2a2a2a" stroke-width="1" style="animation:pillIn 0.6s ease 1.2s both"/>
-  <text x="156" y="255" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="13" fill="#787878" style="animation:pillIn 0.6s ease 1.2s both">🐍 Python</text>
+  <rect x="116" y="238" width="80"  height="26" rx="13" fill="#f3f3f3" stroke="#111111" stroke-width="1" style="animation:pillIn 0.6s ease 1.2s both"/>
+  <text x="156" y="255" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="13" fill="#111111" style="animation:pillIn 0.6s ease 1.2s both">🐍 Python</text>
 
-  <rect x="204" y="238" width="72"  height="26" rx="13" fill="#131313" stroke="#2a2a2a" stroke-width="1" style="animation:pillIn 0.6s ease 1.3s both"/>
-  <text x="240" y="255" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="13" fill="#787878" style="animation:pillIn 0.6s ease 1.3s both">🤖 AI/ML</text>
+  <rect x="204" y="238" width="72"  height="26" rx="13" fill="#f3f3f3" stroke="#111111" stroke-width="1" style="animation:pillIn 0.6s ease 1.3s both"/>
+  <text x="240" y="255" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="13" fill="#111111" style="animation:pillIn 0.6s ease 1.3s both">🤖 AI/ML</text>
 
-  <rect x="284" y="238" width="122" height="26" rx="13" fill="#131313" stroke="#2a2a2a" stroke-width="1" style="animation:pillIn 0.6s ease 1.4s both"/>
-  <text x="345" y="255" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="13" fill="#787878" style="animation:pillIn 0.6s ease 1.4s both">🧠 Deep Learning</text>
+  <rect x="284" y="238" width="122" height="26" rx="13" fill="#f3f3f3" stroke="#111111" stroke-width="1" style="animation:pillIn 0.6s ease 1.4s both"/>
+  <text x="345" y="255" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="13" fill="#111111" style="animation:pillIn 0.6s ease 1.4s both">🧠 Deep Learning</text>
 
-  <rect x="414" y="238" width="108" height="26" rx="13" fill="#131313" stroke="#2a2a2a" stroke-width="1" style="animation:pillIn 0.6s ease 1.5s both"/>
-  <text x="468" y="255" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="13" fill="#787878" style="animation:pillIn 0.6s ease 1.5s both">🔬 TensorFlow</text>
+  <rect x="414" y="238" width="108" height="26" rx="13" fill="#f3f3f3" stroke="#111111" stroke-width="1" style="animation:pillIn 0.6s ease 1.5s both"/>
+  <text x="468" y="255" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="13" fill="#111111" style="animation:pillIn 0.6s ease 1.5s both">🔬 TensorFlow</text>
 
-  <rect x="530" y="238" width="90"  height="26" rx="13" fill="#131313" stroke="#2a2a2a" stroke-width="1" style="animation:pillIn 0.6s ease 1.6s both"/>
-  <text x="575" y="255" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="13" fill="#787878" style="animation:pillIn 0.6s ease 1.6s both">🔥 PyTorch</text>
+  <rect x="530" y="238" width="90"  height="26" rx="13" fill="#f3f3f3" stroke="#111111" stroke-width="1" style="animation:pillIn 0.6s ease 1.6s both"/>
+  <text x="575" y="255" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="13" fill="#111111" style="animation:pillIn 0.6s ease 1.6s both">🔥 PyTorch</text>
 
-  <rect x="628" y="238" width="55"  height="26" rx="13" fill="#131313" stroke="#2a2a2a" stroke-width="1" style="animation:pillIn 0.6s ease 1.7s both"/>
-  <text x="655" y="255" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="13" fill="#787878" style="animation:pillIn 0.6s ease 1.7s both">⚗️ JAX</text>
+  <rect x="628" y="238" width="55"  height="26" rx="13" fill="#f3f3f3" stroke="#111111" stroke-width="1" style="animation:pillIn 0.6s ease 1.7s both"/>
+  <text x="655" y="255" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="13" fill="#111111" style="animation:pillIn 0.6s ease 1.7s both">⚗️ JAX</text>
 
   <!-- ROW 2 — Data and Libraries (5 pills) -->
-  <rect x="166" y="273" width="78"  height="26" rx="13" fill="#131313" stroke="#2a2a2a" stroke-width="1" style="animation:pillIn 0.6s ease 1.4s both"/>
-  <text x="205" y="290" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="13" fill="#787878" style="animation:pillIn 0.6s ease 1.4s both">📊 NumPy</text>
+  <rect x="166" y="273" width="78"  height="26" rx="13" fill="#f3f3f3" stroke="#111111" stroke-width="1" style="animation:pillIn 0.6s ease 1.4s both"/>
+  <text x="205" y="290" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="13" fill="#111111" style="animation:pillIn 0.6s ease 1.4s both">📊 NumPy</text>
 
-  <rect x="252" y="273" width="82"  height="26" rx="13" fill="#131313" stroke="#2a2a2a" stroke-width="1" style="animation:pillIn 0.6s ease 1.5s both"/>
-  <text x="293" y="290" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="13" fill="#787878" style="animation:pillIn 0.6s ease 1.5s both">🐼 Pandas</text>
+  <rect x="252" y="273" width="82"  height="26" rx="13" fill="#f3f3f3" stroke="#111111" stroke-width="1" style="animation:pillIn 0.6s ease 1.5s both"/>
+  <text x="293" y="290" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="13" fill="#111111" style="animation:pillIn 0.6s ease 1.5s both">🐼 Pandas</text>
 
-  <rect x="342" y="273" width="108" height="26" rx="13" fill="#131313" stroke="#2a2a2a" stroke-width="1" style="animation:pillIn 0.6s ease 1.6s both"/>
-  <text x="396" y="290" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="13" fill="#787878" style="animation:pillIn 0.6s ease 1.6s both">🔬 Scikit-learn</text>
+  <rect x="342" y="273" width="108" height="26" rx="13" fill="#f3f3f3" stroke="#111111" stroke-width="1" style="animation:pillIn 0.6s ease 1.6s both"/>
+  <text x="396" y="290" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="13" fill="#111111" style="animation:pillIn 0.6s ease 1.6s both">🔬 Scikit-learn</text>
 
-  <rect x="458" y="273" width="85"  height="26" rx="13" fill="#131313" stroke="#2a2a2a" stroke-width="1" style="animation:pillIn 0.6s ease 1.7s both"/>
-  <text x="500" y="290" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="13" fill="#787878" style="animation:pillIn 0.6s ease 1.7s both">⚡ FastAPI</text>
+  <rect x="458" y="273" width="85"  height="26" rx="13" fill="#f3f3f3" stroke="#111111" stroke-width="1" style="animation:pillIn 0.6s ease 1.7s both"/>
+  <text x="500" y="290" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="13" fill="#111111" style="animation:pillIn 0.6s ease 1.7s both">⚡ FastAPI</text>
 
-  <rect x="551" y="273" width="82"  height="26" rx="13" fill="#131313" stroke="#2a2a2a" stroke-width="1" style="animation:pillIn 0.6s ease 1.8s both"/>
-  <text x="592" y="290" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="13" fill="#787878" style="animation:pillIn 0.6s ease 1.8s both">🐳 Docker</text>
+  <rect x="551" y="273" width="82"  height="26" rx="13" fill="#f3f3f3" stroke="#111111" stroke-width="1" style="animation:pillIn 0.6s ease 1.8s both"/>
+  <text x="592" y="290" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="13" fill="#111111" style="animation:pillIn 0.6s ease 1.8s both">🐳 Docker</text>
 
   <!-- ROW 3 — Web and Infra (6 pills) -->
-  <rect x="115" y="308" width="95"  height="26" rx="13" fill="#131313" stroke="#2a2a2a" stroke-width="1" style="animation:pillIn 0.6s ease 1.6s both"/>
-  <text x="162" y="325" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="13" fill="#787878" style="animation:pillIn 0.6s ease 1.6s both">🌐 Full-Stack</text>
+  <rect x="115" y="308" width="95"  height="26" rx="13" fill="#f3f3f3" stroke="#111111" stroke-width="1" style="animation:pillIn 0.6s ease 1.6s both"/>
+  <text x="162" y="325" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="13" fill="#111111" style="animation:pillIn 0.6s ease 1.6s both">🌐 Full-Stack</text>
 
-  <rect x="218" y="308" width="115" height="26" rx="13" fill="#131313" stroke="#2a2a2a" stroke-width="1" style="animation:pillIn 0.6s ease 1.7s both"/>
-  <text x="275" y="325" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="13" fill="#787878" style="animation:pillIn 0.6s ease 1.7s both">💻 HTML/CSS/JS</text>
+  <rect x="218" y="308" width="115" height="26" rx="13" fill="#f3f3f3" stroke="#111111" stroke-width="1" style="animation:pillIn 0.6s ease 1.7s both"/>
+  <text x="275" y="325" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="13" fill="#111111" style="animation:pillIn 0.6s ease 1.7s both">💻 HTML/CSS/JS</text>
 
-  <rect x="341" y="308" width="103" height="26" rx="13" fill="#131313" stroke="#2a2a2a" stroke-width="1" style="animation:pillIn 0.6s ease 1.8s both"/>
-  <text x="392" y="325" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="13" fill="#787878" style="animation:pillIn 0.6s ease 1.8s both">📘 TypeScript</text>
+  <rect x="341" y="308" width="103" height="26" rx="13" fill="#f3f3f3" stroke="#111111" stroke-width="1" style="animation:pillIn 0.6s ease 1.8s both"/>
+  <text x="392" y="325" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="13" fill="#111111" style="animation:pillIn 0.6s ease 1.8s both">📘 TypeScript</text>
 
-  <rect x="452" y="308" width="80"  height="26" rx="13" fill="#131313" stroke="#2a2a2a" stroke-width="1" style="animation:pillIn 0.6s ease 1.9s both"/>
-  <text x="492" y="325" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="13" fill="#787878" style="animation:pillIn 0.6s ease 1.9s both">🐧 Linux</text>
+  <rect x="452" y="308" width="80"  height="26" rx="13" fill="#f3f3f3" stroke="#111111" stroke-width="1" style="animation:pillIn 0.6s ease 1.9s both"/>
+  <text x="492" y="325" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="13" fill="#111111" style="animation:pillIn 0.6s ease 1.9s both">🐧 Linux</text>
 
-  <rect x="540" y="308" width="62"  height="26" rx="13" fill="#131313" stroke="#2a2a2a" stroke-width="1" style="animation:pillIn 0.6s ease 2.0s both"/>
-  <text x="571" y="325" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="13" fill="#787878" style="animation:pillIn 0.6s ease 2.0s both">🔀 Git</text>
+  <rect x="540" y="308" width="62"  height="26" rx="13" fill="#f3f3f3" stroke="#111111" stroke-width="1" style="animation:pillIn 0.6s ease 2.0s both"/>
+  <text x="571" y="325" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="13" fill="#111111" style="animation:pillIn 0.6s ease 2.0s both">🔀 Git</text>
 
-  <rect x="610" y="308" width="75"  height="26" rx="13" fill="#131313" stroke="#2a2a2a" stroke-width="1" style="animation:pillIn 0.6s ease 2.1s both"/>
-  <text x="647" y="325" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="13" fill="#787878" style="animation:pillIn 0.6s ease 2.1s both">⚙️ CI/CD</text>
+  <rect x="610" y="308" width="75"  height="26" rx="13" fill="#f3f3f3" stroke="#111111" stroke-width="1" style="animation:pillIn 0.6s ease 2.1s both"/>
+  <text x="647" y="325" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="13" fill="#111111" style="animation:pillIn 0.6s ease 2.1s both">⚙️ CI/CD</text>
 
   <!-- Bottom label -->
   <text x="400" y="368" text-anchor="middle"
         font-family="'Courier New',Courier,monospace"
-        font-size="11" letter-spacing="4" fill="#2e2e2e"
+        font-size="11" letter-spacing="4" fill="#1f1f1f"
         style="animation:fadeIn 0.8s ease 2.5s both">· · · depth is the only metric that matters · · ·</text>
 
 </svg>
