@@ -35,12 +35,19 @@
       <stop offset="0%"   stop-color="#ececec" stop-opacity="0"/>
       <stop offset="100%" stop-color="#ffffff" stop-opacity="0.8"/>
     </radialGradient>
-    <linearGradient id="nameColor" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%"   stop-color="#00d4ff"/>
-      <stop offset="25%"  stop-color="#ffd43b"/>
-      <stop offset="50%"  stop-color="#00ff88"/>
-      <stop offset="75%"  stop-color="#ff6b6b"/>
-      <stop offset="100%" stop-color="#a855f7"/>
+    <linearGradient id="nameColor" x1="-100%" y1="0%" x2="100%" y2="0%" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#ff0033"/>
+      <stop offset="16%"  stop-color="#ff7a00"/>
+      <stop offset="32%"  stop-color="#ffe600"/>
+      <stop offset="48%"  stop-color="#00d26a"/>
+      <stop offset="64%"  stop-color="#00b8ff"/>
+      <stop offset="80%"  stop-color="#3558ff"/>
+      <stop offset="100%" stop-color="#b400ff"/>
+      <animateTransform attributeName="gradientTransform"
+                        type="translate"
+                        values="-220 0; 220 0; -220 0"
+                        dur="8s"
+                        repeatCount="indefinite"/>
     </linearGradient>
   </defs>
 
