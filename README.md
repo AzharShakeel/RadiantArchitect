@@ -88,31 +88,41 @@ When a problem arrives, the first question isn't *how* — it's *what kind*.
 
 ## `03` &nbsp; Stack Topology
 
-<div align="center">
+<p align="center"><strong><code>BACKEND</code></strong></p>
 
-**`BACKEND`**
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-Primary-ffd43b?style=for-the-badge&logo=python&logoColor=black" alt="Python">
+  &nbsp;
+  <img src="https://img.shields.io/badge/AI--ML_Systems-Precise-00d4ff?style=for-the-badge&logo=pytorch&logoColor=white" alt="AI/ML Systems">
+  &nbsp;
+  <img src="https://img.shields.io/badge/Algorithm_Design-Custom-00ff88?style=for-the-badge" alt="Algorithm Design">
+</p>
 
-![Python](https://img.shields.io/badge/Python-Primary-ffd43b?style=for-the-badge&logo=python&logoColor=black)&nbsp;
-![AI/ML Systems](https://img.shields.io/badge/AI%2FML_Systems-Precise-00d4ff?style=for-the-badge&logo=pytorch&logoColor=white)&nbsp;
-![Algorithm Design](https://img.shields.io/badge/Algorithm_Design-Custom-00ff88?style=for-the-badge&logoColor=black)
+<p align="center"><strong><code>INFRASTRUCTURE</code></strong></p>
 
-**`INFRASTRUCTURE`**
+<p align="center">
+  <img src="https://img.shields.io/badge/Linux-Native-00ff88?style=for-the-badge&logo=linux&logoColor=black" alt="Linux">
+  &nbsp;
+  <img src="https://img.shields.io/badge/Docker_CI--CD-Hardened-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker / CI/CD">
+</p>
 
-![Linux](https://img.shields.io/badge/Linux-Native-00ff88?style=for-the-badge&logo=linux&logoColor=black)&nbsp;
-![Docker / CI/CD](https://img.shields.io/badge/Docker_%2F_CI--CD-Hardened-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+<p align="center"><strong><code>FRONTEND</code></strong></p>
 
-**`FRONTEND`**
+<p align="center">
+  <img src="https://img.shields.io/badge/HTML-Always-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML">
+  &nbsp;
+  <img src="https://img.shields.io/badge/CSS-Always-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS">
+  &nbsp;
+  <img src="https://img.shields.io/badge/JavaScript-Always-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+  &nbsp;
+  <img src="https://img.shields.io/badge/React_TypeScript-Earned-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React / TypeScript">
+</p>
 
-![HTML](https://img.shields.io/badge/HTML-Always-E34F26?style=for-the-badge&logo=html5&logoColor=white)&nbsp;
-![CSS](https://img.shields.io/badge/CSS-Always-1572B6?style=for-the-badge&logo=css3&logoColor=white)&nbsp;
-![JavaScript](https://img.shields.io/badge/JavaScript-Always-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)&nbsp;
-![React / TypeScript](https://img.shields.io/badge/React_%2F_TypeScript-Earned-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+<p align="center"><strong><code>▓▓▓▓ SHADOW STACK</code></strong></p>
 
-**`▓▓▓▓ SHADOW STACK`**
-
-![Shadow Stack](https://img.shields.io/badge/%E2%96%93%E2%96%93%E2%96%93%E2%96%93_SHADOW_STACK-Private-1a1a1a?style=for-the-badge)
-
-</div>
+<p align="center">
+  <img src="https://img.shields.io/badge/SHADOW_STACK-Private-1a1a1a?style=for-the-badge" alt="Shadow Stack">
+</p>
 
 ---
 
@@ -174,7 +184,7 @@ When a concept earns public attention, I write about it or teach it.
 
 [![Python](https://img.shields.io/badge/Python-Primary_Language-ffd43b?style=flat-square&logo=python&logoColor=black)](https://python.org)&nbsp;
 [![Linux](https://img.shields.io/badge/Linux-Native_Foundation-00ff88?style=flat-square&logo=linux&logoColor=black)](https://kernel.org)&nbsp;
-[![AI/ML](https://img.shields.io/badge/AI%2FML-Precision_Systems-00d4ff?style=flat-square&logo=pytorch&logoColor=white)](#)&nbsp;
+[![AI/ML](https://img.shields.io/badge/AI--ML-Precision_Systems-00d4ff?style=flat-square&logo=pytorch&logoColor=white)](#)&nbsp;
 [![Status](https://img.shields.io/badge/Status-Research_Mode-ff6b6b?style=flat-square)](#)
 
 <br/>
