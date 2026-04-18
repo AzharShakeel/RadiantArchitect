@@ -14,6 +14,10 @@
 
 *The foundation holds. The intelligence compounds. The work speaks.*
 
+[![License](https://img.shields.io/badge/License-CC_BY--NC_4.0-blue?style=flat-square)](LICENSE)
+
+*Protected under the Creative Commons Attribution-NonCommercial 4.0 International License.*
+
 </div>
 
 ---
