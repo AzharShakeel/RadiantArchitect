@@ -1,28 +1,35 @@
-# Asset License (Manual Terms)
+# Asset License (Strict Manual Terms)
 
-Version 1.0 — Effective April 18, 2026
+Version 2.0 — Effective April 18, 2026
 
 Copyright (c) 2026 Azhar Shakeel
 
+## Scope
+
+This file applies to all brand/design assets, including all SVG files in `assets/`,
+and the visual identity/layout elements listed in [`NOTICE.md`](NOTICE.md).
+
+## Scope
+
+This file applies to all brand/design assets, including all SVG files in `assets/`,
+and the visual identity/layout elements listed in [`NOTICE.md`](NOTICE.md).
+
 ## Grant
 
-No license is granted for proprietary branding/design assets listed in [`NOTICE.md`](NOTICE.md),
-except where explicit written permission is provided by the copyright holder.
+No license is granted to use brand/design assets unless prior written permission is given
+by the copyright owner.
 
-## Restrictions
+## Prohibited uses (without written permission)
 
-Without prior written permission, you may not:
+1. Copying, mirroring, republishing, or redistributing any protected SVG/logo/design asset.
+2. Editing, recoloring, reformatting, animating, tracing, vectorizing, or otherwise modifying assets.
+3. Creating derivative, lookalike, or confusingly similar branding or profile designs.
+4. Using protected assets in commercial, promotional, client, agency, personal-branding, or template work.
+5. Uploading or packaging protected assets in themes, starter kits, design packs, or AI training datasets.
 
-1. Copy, mirror, or republish protected branding assets.
-2. Modify, remix, derive, or restyle protected branding assets.
-3. Recreate or substantially imitate the distinctive profile layout and brand presentation.
-4. Use protected marks/identity elements in a way that suggests affiliation or endorsement.
-5. Use protected branding/design assets for commercial or promotional purposes.
+## Legal exceptions
 
-## Limited allowance
-
-Short quotations for commentary, criticism, education, or fair-use contexts may be allowed only
-to the extent permitted by applicable law.
+Only uses expressly required by law (for example fair use/fair dealing exceptions) are excluded.
 
 ## Reservation of rights
 

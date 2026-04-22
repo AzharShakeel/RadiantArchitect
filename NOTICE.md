@@ -1,28 +1,36 @@
 # NOTICE
 
-This repository contains both licensed material and protected brand assets.
+This repository contains proprietary material and protected brand assets.
 
-## 1) Base license
+## 1) License baseline
 
-Unless otherwise stated, repository content is provided under the license in [`LICENSE`](LICENSE)
-(Creative Commons Attribution-NonCommercial 4.0 International).
+All repository content is protected under [`LICENSE`](LICENSE) (All Rights Reserved),
+unless the owner grants written permission.
 
 ## 2) Reserved branding/design assets
 
-The following are proprietary brand assets and are **not** granted for reuse, redistribution,
-or adaptation without prior written permission:
+The following are strictly protected and are prohibited from reuse, redistribution,
+modification, adaptation, or derivative design without prior written permission:
 
 - `assets/azhar-shakeel.svg`
 - `assets/build.svg`
 - `assets/stack.svg`
 - Profile visual layout, brand presentation structure, and signature tagline blocks in `README.md`
 
-## 3) No implied trademark grant
+## 3) No trademark license
 
 No permission is granted to use names, logos, marks, identity elements, or visual branding in a
-way that implies affiliation, sponsorship, endorsement, or official origin.
+way that implies affiliation, sponsorship, endorsement, partnership, or official origin.
 
-## 4) Enforcement
+## 4) Jurisdictions and platform enforcement
 
-Unauthorized copying or derivative branding use may be subject to takedown requests and other
-available legal remedies.
+Unauthorized use may be pursued under applicable law, including:
+
+- U.S. copyright/trademark law (including DMCA procedures where applicable)
+- India's Copyright Act, 1957 and Trade Marks Act, 1999
+- GitHub Terms of Service, GitHub Copyright (DMCA) policy, and GitHub Trademark policy
+
+## 5) Privacy note
+
+This repository does not grant rights to process owner identity/brand materials for profiling,
+training, or dataset packaging. Any permitted data handling must comply with applicable privacy law.
