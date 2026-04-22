@@ -10,7 +10,7 @@
 
 <img src="assets/build.svg" width="100%">
 
-**`[ ENTERPRISE AI · ALGORITHM ARCHITECTURE · FULL-STACK SYSTEMS ]`**
+**`[ KYN AI · ALGORITHM ARCHITECTURE · FULL-STACK SYSTEMS ]`**
 
 *The foundation holds. The intelligence compounds. The work speaks.*
 

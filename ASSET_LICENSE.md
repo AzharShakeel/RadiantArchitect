@@ -2,7 +2,12 @@
 
 Version 2.0 — Effective April 18, 2026
 
-Copyright (c) 2026 Azhar
+Copyright (c) 2026 Kyn AI
+
+## Scope
+
+This file applies to all brand/design assets, including all SVG files in `assets/`,
+and the visual identity/layout elements listed in [`NOTICE.md`](NOTICE.md).
 
 ## Scope
 

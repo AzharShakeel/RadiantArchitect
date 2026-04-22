@@ -146,14 +146,14 @@
         font-size="56" font-weight="bold" letter-spacing="7"
         fill="url(#nameColor)" filter="url(#nameGlow)"
         opacity="0.3"
-        style="animation:fadeIn 1.2s ease 0.4s both">AZHAR SHAKEEL</text>
+        style="animation:fadeIn 1.2s ease 0.4s both">KYN AI</text>
 
   <!-- NAME — main layer -->
   <text x="400" y="112" text-anchor="middle"
         font-family="'Courier New',Courier,monospace"
         font-size="56" font-weight="bold" letter-spacing="7"
         fill="url(#nameColor)"
-        style="animation:fadeIn 1.2s ease 0.4s both">AZHAR SHAKEEL</text>
+        style="animation:fadeIn 1.2s ease 0.4s both">KYN AI</text>
 
   <!-- Top divider -->
   <line x1="100" y1="134" x2="700" y2="134" stroke="#111111" stroke-width="1"
