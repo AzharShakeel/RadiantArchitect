@@ -1,5 +1,7 @@
+<h1 align="center">KYN AI</h1>
+
 <p align="center">
-  <img src="assets/radiant-architect.svg" width="100%">
+  <img src="assets/kyn-ai.svg" width="100%">
 </p>
 
 <!-- ============================================================
@@ -10,15 +12,15 @@
 
 <img src="assets/build.svg" width="100%">
 
-**`[ ENTERPRISE AI · ALGORITHM ARCHITECTURE · FULL-STACK SYSTEMS ]`**
+**`[ KYN AI · ALGORITHM ARCHITECTURE · FULL-STACK SYSTEMS ]`**
 
 *The foundation holds. The intelligence compounds. The work speaks.*
 
-[![License](https://img.shields.io/badge/License-CC_BY--NC_4.0-blue?style=flat-square)](LICENSE)
+[![License](https://img.shields.io/badge/License-All_Rights_Reserved-critical?style=flat-square)](LICENSE)
 
-*Protected under the Creative Commons Attribution-NonCommercial 4.0 International License.*
+*Protected as proprietary content under an All Rights Reserved license.*
 
-*Brand/design assets are additionally protected under reserved manual terms — see [NOTICE](NOTICE.md) and [ASSET_LICENSE](ASSET_LICENSE.md).*
+*Brand/design assets are additionally protected under strict manual terms — see [NOTICE](NOTICE.md), [ASSET_LICENSE](ASSET_LICENSE.md), and [PRIVACY](PRIVACY.md).*
 
 </div>
 
@@ -140,7 +142,7 @@ When a problem arrives, the first question isn't *how* — it's *what kind*.
 When a concept earns public attention, I write about it or teach it.
 **Building, researching, and shipping always comes first.**
 
-This work is protected under the Creative Commons Attribution-NonCommercial 4.0 International License.
+This work is proprietary and protected under an All Rights Reserved license.
 
 ---
 
@@ -165,7 +167,7 @@ This work is protected under the Creative Commons Attribution-NonCommercial 4.0 
 
 <br/>
 
-*Protected under CC BY-NC 4.0 — see [LICENSE](LICENSE). Reserved branding terms: [NOTICE](NOTICE.md) · [ASSET_LICENSE](ASSET_LICENSE.md).*
+*Protected under All Rights Reserved terms — see [LICENSE](LICENSE), [NOTICE](NOTICE.md), [ASSET_LICENSE](ASSET_LICENSE.md), and [PRIVACY](PRIVACY.md).*
 
 <br/>
 

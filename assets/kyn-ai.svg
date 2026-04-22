@@ -1,3 +1,4 @@
+<!-- Proprietary asset. Reuse, modification, or redistribution is prohibited without prior written permission. -->
 <svg width="100%" viewBox="0 0 800 390" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <filter id="titleGlow" x="-20%" y="-30%" width="140%" height="160%">
@@ -34,12 +35,19 @@
       <stop offset="0%"   stop-color="#ececec" stop-opacity="0"/>
       <stop offset="100%" stop-color="#ffffff" stop-opacity="0.8"/>
     </radialGradient>
-    <linearGradient id="nameColor" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%"   stop-color="#00d4ff"/>
-      <stop offset="25%"  stop-color="#ffd43b"/>
-      <stop offset="50%"  stop-color="#00ff88"/>
-      <stop offset="75%"  stop-color="#ff6b6b"/>
-      <stop offset="100%" stop-color="#a855f7"/>
+    <linearGradient id="nameColor" x1="-100%" y1="0%" x2="100%" y2="0%" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#ff0033"/>
+      <stop offset="16%"  stop-color="#ff7a00"/>
+      <stop offset="32%"  stop-color="#ffe600"/>
+      <stop offset="48%"  stop-color="#00d26a"/>
+      <stop offset="64%"  stop-color="#00b8ff"/>
+      <stop offset="80%"  stop-color="#3558ff"/>
+      <stop offset="100%" stop-color="#b400ff"/>
+      <animateTransform attributeName="gradientTransform"
+                        type="translate"
+                        values="-220 0; 220 0; -220 0"
+                        dur="8s"
+                        repeatCount="indefinite"/>
     </linearGradient>
   </defs>
 
@@ -138,14 +146,14 @@
         font-size="56" font-weight="bold" letter-spacing="7"
         fill="url(#nameColor)" filter="url(#nameGlow)"
         opacity="0.3"
-        style="animation:fadeIn 1.2s ease 0.4s both">AZHAR SHAKEEL</text>
+        style="animation:fadeIn 1.2s ease 0.4s both">KYN AI</text>
 
   <!-- NAME — main layer -->
   <text x="400" y="112" text-anchor="middle"
         font-family="'Courier New',Courier,monospace"
         font-size="56" font-weight="bold" letter-spacing="7"
         fill="url(#nameColor)"
-        style="animation:fadeIn 1.2s ease 0.4s both">AZHAR SHAKEEL</text>
+        style="animation:fadeIn 1.2s ease 0.4s both">KYN AI</text>
 
   <!-- Top divider -->
   <line x1="100" y1="134" x2="700" y2="134" stroke="#111111" stroke-width="1"
