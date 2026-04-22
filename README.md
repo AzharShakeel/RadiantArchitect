@@ -10,7 +10,7 @@
 
 <img src="assets/build.svg" width="100%">
 
-**`[ KYN AI · ALGORITHM ARCHITECTURE · FULL-STACK SYSTEMS ]`**
+**`[ SYSTEM ARCHITECT · ALGORITHM ARCHITECTURE · FULL-STACK SYSTEMS ]`**
 
 *The foundation holds. The intelligence compounds. The work speaks.*
 
