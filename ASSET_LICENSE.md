@@ -9,6 +9,11 @@ Copyright (c) 2026 Kyn AI
 This file applies to all brand/design assets, including all SVG files in `assets/`,
 and the visual identity/layout elements listed in [`NOTICE.md`](NOTICE.md).
 
+## Scope
+
+This file applies to all brand/design assets, including all SVG files in `assets/`,
+and the visual identity/layout elements listed in [`NOTICE.md`](NOTICE.md).
+
 ## Grant
 
 No license is granted to use brand/design assets unless prior written permission is given
