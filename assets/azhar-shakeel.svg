@@ -1,242 +1,212 @@
-<svg width="100%" viewBox="0 0 800 390" xmlns="http://www.w3.org/2000/svg">
+<svg width="100%" viewBox="0 0 900 445" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>Azhar Shakeel — Radiant Architect</title>
+  <desc>GitHub profile banner for Azhar Shakeel, System Architect and AI builder.</desc>
+
   <defs>
-    <filter id="titleGlow" x="-20%" y="-30%" width="140%" height="160%">
-      <feGaussianBlur stdDeviation="5" result="b1"/>
-      <feGaussianBlur stdDeviation="12" result="b2"/>
-      <feMerge>
-        <feMergeNode in="b2"/>
-        <feMergeNode in="b1"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-    <filter id="nameGlow" x="-10%" y="-30%" width="120%" height="160%">
-      <feGaussianBlur stdDeviation="6" result="b1"/>
-      <feMerge>
-        <feMergeNode in="b1"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-    <pattern id="grid" width="45" height="45" patternUnits="userSpaceOnUse">
-      <path d="M 45 0 L 0 0 0 45" fill="none" stroke="#d6d6d6" stroke-width="0.6"/>
-    </pattern>
-    <linearGradient id="scanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%"   stop-color="#ffffff" stop-opacity="0"/>
-      <stop offset="50%"  stop-color="#ffffff" stop-opacity="0.07"/>
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    <style>
+      @keyframes pillIn {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+      }
+    </style>
+
+    <linearGradient id="shimmer" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1000" y2="0">
+      <stop offset="0%"   stop-color="#B0AEAA"/>
+      <stop offset="46%"  stop-color="#B0AEAA"/>
+      <stop offset="50%"  stop-color="#FFFFFF"/>
+      <stop offset="54%"  stop-color="#B0AEAA"/>
+      <stop offset="100%" stop-color="#B0AEAA"/>
+      <animateTransform attributeName="gradientTransform" type="translate"
+        values="-1000 0;1000 0;1000 0" keyTimes="0;0.5;1" dur="5s" repeatCount="indefinite"/>
     </linearGradient>
-    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%"   stop-color="#111111" stop-opacity="0"/>
-      <stop offset="40%"  stop-color="#111111" stop-opacity="1"/>
-      <stop offset="60%"  stop-color="#303030" stop-opacity="1"/>
-      <stop offset="100%" stop-color="#111111" stop-opacity="0"/>
+
+    <linearGradient id="topBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#3AAFCC" stop-opacity="0"/>
+      <stop offset="30%"  stop-color="#3AAFCC" stop-opacity="0.85"/>
+      <stop offset="70%"  stop-color="#3AAFCC" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#3AAFCC" stop-opacity="0"/>
     </linearGradient>
-    <radialGradient id="vig" cx="50%" cy="50%" r="70%">
-      <stop offset="0%"   stop-color="#ececec" stop-opacity="0"/>
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.8"/>
-    </radialGradient>
-    <linearGradient id="nameColor" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%"   stop-color="#00d4ff"/>
-      <stop offset="25%"  stop-color="#ffd43b"/>
-      <stop offset="50%"  stop-color="#00ff88"/>
-      <stop offset="75%"  stop-color="#ff6b6b"/>
-      <stop offset="100%" stop-color="#a855f7"/>
+
+    <linearGradient id="sep" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#1E5F7A" stop-opacity="0"/>
+      <stop offset="15%"  stop-color="#1E5F7A" stop-opacity="0.5"/>
+      <stop offset="50%"  stop-color="#3AAFCC" stop-opacity="1"/>
+      <stop offset="85%"  stop-color="#1E5F7A" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#1E5F7A" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="botBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#3AAFCC" stop-opacity="0"/>
+      <stop offset="30%"  stop-color="#3AAFCC" stop-opacity="0.35"/>
+      <stop offset="70%"  stop-color="#3AAFCC" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#3AAFCC" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="midSep" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#1A2A3A" stop-opacity="0"/>
+      <stop offset="20%"  stop-color="#1A2A3A" stop-opacity="0.6"/>
+      <stop offset="50%"  stop-color="#1A2A3A" stop-opacity="1"/>
+      <stop offset="80%"  stop-color="#1A2A3A" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#1A2A3A" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="div1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#4B5563" stop-opacity="0"/>
+      <stop offset="50%"  stop-color="#4B5563" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#4B5563" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="div2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#1D4ED8" stop-opacity="0"/>
+      <stop offset="50%"  stop-color="#1D4ED8" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#1D4ED8" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="div3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#B45309" stop-opacity="0"/>
+      <stop offset="50%"  stop-color="#B45309" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#B45309" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="div4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#9F1239" stop-opacity="0"/>
+      <stop offset="50%"  stop-color="#9F1239" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#9F1239" stop-opacity="0"/>
     </linearGradient>
   </defs>
 
-  <style>
-    @keyframes scanSweep {
-      0%   { transform: translateY(-5px); opacity: 0; }
-      5%   { opacity: 1; }
-      95%  { opacity: 1; }
-      100% { transform: translateY(395px); opacity: 0; }
-    }
-    @keyframes flicker {
-      0%, 100% { opacity: 0.6; }
-      50%  { opacity: 0.3; }
-      80%  { opacity: 0.8; }
-      93%  { opacity: 0.2; }
-      95%  { opacity: 0.7; }
-    }
-    @keyframes fadeIn {
-      0%   { opacity: 0; }
-      100% { opacity: 1; }
-    }
-    @keyframes msg1 {
-      0%  { opacity:0; } 3%  { opacity:1; } 22% { opacity:1; } 25% { opacity:0; } 100% { opacity:0; }
-    }
-    @keyframes msg2 {
-      0%  { opacity:0; } 25% { opacity:0; } 28% { opacity:1; } 97% { opacity:1; } 100% { opacity:0; }
-    }
-    @keyframes drift1 {
-      0%, 100% { transform: translate(0,0); opacity: 0.4; }
-      50%  { transform: translate(10px,-14px); opacity: 0.15; }
-    }
-    @keyframes drift2 {
-      0%, 100% { transform: translate(0,0); opacity: 0.2; }
-      50%  { transform: translate(-8px,10px); opacity: 0.5; }
-    }
-    @keyframes dotBlink {
-      0%, 100% { opacity: 1; }
-      50%  { opacity: 0; }
-    }
-    @keyframes pillIn {
-      0%   { opacity: 0; }
-      100% { opacity: 1; }
-    }
-  </style>
+  <!-- ░░ BACKGROUND ░░ -->
+  <rect width="900" height="445" fill="#070B15"/>
 
-  <!-- BACKGROUND -->
-  <rect width="800" height="390" fill="#ffffff"/>
-  <rect width="800" height="390" fill="url(#grid)"/>
-  <rect width="800" height="390" fill="url(#vig)"/>
+  <!-- Grid -->
+  <line x1="0" y1="80"  x2="900" y2="80"  stroke="white" stroke-opacity="0.014" stroke-width="1"/>
+  <line x1="0" y1="160" x2="900" y2="160" stroke="white" stroke-opacity="0.014" stroke-width="1"/>
+  <line x1="0" y1="240" x2="900" y2="240" stroke="white" stroke-opacity="0.014" stroke-width="1"/>
+  <line x1="0" y1="320" x2="900" y2="320" stroke="white" stroke-opacity="0.014" stroke-width="1"/>
+  <line x1="0" y1="400" x2="900" y2="400" stroke="white" stroke-opacity="0.014" stroke-width="1"/>
+  <line x1="225" y1="0" x2="225" y2="445" stroke="white" stroke-opacity="0.01" stroke-width="1"/>
+  <line x1="450" y1="0" x2="450" y2="445" stroke="white" stroke-opacity="0.01" stroke-width="1"/>
+  <line x1="675" y1="0" x2="675" y2="445" stroke="white" stroke-opacity="0.01" stroke-width="1"/>
 
-  <!-- Outer border -->
-  <rect x="10" y="10" width="780" height="370" rx="3" ry="3"
-        fill="none" stroke="url(#borderGrad)" stroke-width="1"
-        stroke-dasharray="2600" stroke-dashoffset="2600">
-    <animate attributeName="stroke-dashoffset" from="2600" to="0" dur="2.5s" fill="freeze"/>
-  </rect>
+  <!-- Edge accents -->
+  <rect x="0" y="0"   width="900" height="2" fill="url(#topBar)"/>
+  <rect x="0" y="443" width="900" height="2" fill="url(#botBar)"/>
 
-  <!-- Corners -->
-  <g style="animation:flicker 5s 0s infinite">
-    <line x1="10" y1="32" x2="10" y2="10" stroke="#363636" stroke-width="1.5"/>
-    <line x1="10" y1="10" x2="32" y2="10" stroke="#363636" stroke-width="1.5"/>
-    <rect x="10" y="10" width="3" height="3" fill="#1a1a1a"/>
-  </g>
-  <g style="animation:flicker 5s 1.2s infinite">
-    <line x1="790" y1="32" x2="790" y2="10" stroke="#363636" stroke-width="1.5"/>
-    <line x1="790" y1="10" x2="768" y2="10" stroke="#363636" stroke-width="1.5"/>
-    <rect x="787" y="10" width="3" height="3" fill="#1a1a1a"/>
-  </g>
-  <g style="animation:flicker 5s 0.6s infinite">
-    <line x1="10" y1="368" x2="10" y2="380" stroke="#363636" stroke-width="1.5"/>
-    <line x1="10" y1="380" x2="32" y2="380" stroke="#363636" stroke-width="1.5"/>
-    <rect x="10" y="377" width="3" height="3" fill="#1a1a1a"/>
-  </g>
-  <g style="animation:flicker 5s 1.8s infinite">
-    <line x1="790" y1="368" x2="790" y2="380" stroke="#363636" stroke-width="1.5"/>
-    <line x1="790" y1="380" x2="768" y2="380" stroke="#363636" stroke-width="1.5"/>
-    <rect x="787" y="377" width="3" height="3" fill="#1a1a1a"/>
-  </g>
+  <!-- Corner brackets -->
+  <path d="M28 28 L28 16 L40 16"       fill="none" stroke="#3AAFCC" stroke-opacity="0.6"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M872 28 L872 16 L860 16"    fill="none" stroke="#3AAFCC" stroke-opacity="0.6"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M28 417 L28 429 L40 429"    fill="none" stroke="#3AAFCC" stroke-opacity="0.2"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M872 417 L872 429 L860 429" fill="none" stroke="#3AAFCC" stroke-opacity="0.2"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 
-  <!-- Scan line -->
-  <rect x="0" y="0" width="800" height="4" fill="url(#scanGrad)"
-        style="animation:scanSweep 5s linear infinite"/>
+  <!-- ░░ IDENTITY BLOCK ░░ -->
+  <text x="450" y="44" text-anchor="middle"
+    font-family="'Courier New',Consolas,monospace"
+    font-size="9" fill="#1D5268" letter-spacing="5">RADIANT ARCHITECT  ·  KASHMIR, INDIA</text>
 
-  <!-- Particles -->
-  <circle cx="60"  cy="55"  r="1.5" fill="#1a1a1a" style="animation:drift1 6s ease-in-out infinite"/>
-  <circle cx="740" cy="70"  r="1"   fill="#1a1a1a" style="animation:drift2 7s ease-in-out infinite"/>
-  <circle cx="120" cy="220" r="1.5" fill="#1f1f1f"    style="animation:drift1 5s ease-in-out 1s infinite"/>
-  <circle cx="680" cy="230" r="1"   fill="#1f1f1f"    style="animation:drift2 8s ease-in-out 2s infinite"/>
-  <circle cx="400" cy="28"  r="1"   fill="#1a1a1a" style="animation:drift1 9s ease-in-out 0.5s infinite"/>
-  <circle cx="200" cy="150" r="1"   fill="#1f1f1f" style="animation:drift2 6s ease-in-out 3s infinite"/>
-  <circle cx="600" cy="160" r="1"   fill="#1f1f1f" style="animation:drift1 7s ease-in-out 1.5s infinite"/>
+  <text x="450" y="126" text-anchor="middle"
+    font-family="'Helvetica Neue',Helvetica,Arial,sans-serif"
+    font-size="60" font-weight="700" letter-spacing="10"
+    fill="url(#shimmer)">AZHAR SHAKEEL</text>
 
-  <!-- NAME — glow layer -->
-  <text x="400" y="112" text-anchor="middle"
-        font-family="'Courier New',Courier,monospace"
-        font-size="56" font-weight="bold" letter-spacing="7"
-        fill="url(#nameColor)" filter="url(#nameGlow)"
-        opacity="0.3"
-        style="animation:fadeIn 1.2s ease 0.4s both">AZHAR SHAKEEL</text>
+  <rect x="75" y="139" width="750" height="1" fill="url(#sep)"/>
 
-  <!-- NAME — main layer -->
-  <text x="400" y="112" text-anchor="middle"
-        font-family="'Courier New',Courier,monospace"
-        font-size="56" font-weight="bold" letter-spacing="7"
-        fill="url(#nameColor)"
-        style="animation:fadeIn 1.2s ease 0.4s both">AZHAR SHAKEEL</text>
+  <text x="450" y="161" text-anchor="middle"
+    font-family="'Courier New',Consolas,monospace"
+    font-size="10" fill="#2E7A96" letter-spacing="3.5">SYSTEM ARCHITECT  ·  ML ENGINEERING  ·  FULL-STACK SYSTEMS</text>
 
-  <!-- Top divider -->
-  <line x1="100" y1="134" x2="700" y2="134" stroke="#111111" stroke-width="1"
-        stroke-dasharray="600" stroke-dashoffset="600">
-    <animate attributeName="stroke-dashoffset" from="600" to="0" dur="1.8s" begin="0.5s" fill="freeze"/>
-  </line>
-  <line x1="100" y1="131" x2="100" y2="137" stroke="#1a1a1a" stroke-width="1"/>
-  <line x1="400" y1="131" x2="400" y2="137" stroke="#1a1a1a" stroke-width="1"/>
-  <line x1="700" y1="131" x2="700" y2="137" stroke="#1a1a1a" stroke-width="1"/>
+  <text x="450" y="183" text-anchor="middle"
+    font-family="Georgia,'Times New Roman',serif"
+    font-size="12" fill="#3A8AA8" font-style="italic">Precision That Thinks — Systems engineered to outlast the hype.</text>
 
-  <!-- Rotating messages -->
-  <text x="400" y="162" text-anchor="middle"
-        font-family="'Courier New',Courier,monospace"
-        font-size="15" letter-spacing="2" fill="#111111"
-        style="animation:msg1 12s linear infinite">ENTERPRISE AI  ·  ALGORITHM ARCHITECTURE  ·  FULL-STACK SYSTEMS</text>
-  <text x="400" y="162" text-anchor="middle"
-        font-family="'Courier New',Courier,monospace"
-        font-size="15" letter-spacing="2" fill="#111111"
-        style="animation:msg2 12s linear infinite">SOLVING REAL PROBLEMS WITH AI</text>
+  <line x1="60" y1="200" x2="840" y2="200" stroke="white" stroke-opacity="0.04" stroke-width="1"/>
 
-  <!-- Mid divider -->
-  <line x1="180" y1="182" x2="620" y2="182" stroke="#1a1a1a" stroke-width="1"
-        stroke-dasharray="440" stroke-dashoffset="440">
-    <animate attributeName="stroke-dashoffset" from="440" to="0" dur="1.8s" begin="1s" fill="freeze"/>
-  </line>
+  <!-- ░░ DARK PSYCHOLOGY PILLARS ░░ -->
+  <!-- SILENCE -->
+  <rect x="52"  y="208" width="120" height="1.5" rx="0.75" fill="url(#div1)"/>
+  <text x="112" y="246" text-anchor="middle" font-family="system-ui,sans-serif" font-size="34">🌑</text>
+  <text x="112" y="265" text-anchor="middle" font-family="'Courier New',Consolas,monospace" font-size="10" fill="#6B7280" letter-spacing="4">SILENCE</text>
+  <text x="112" y="280" text-anchor="middle" font-family="Georgia,serif" font-size="9" fill="#374151" font-style="italic">build in the void.</text>
 
-  <!-- Status -->
-  <circle cx="310" cy="210" r="4" fill="#111111"
-          style="animation:dotBlink 1.2s ease-in-out infinite"/>
-  <text x="325" y="215" text-anchor="start"
-        font-family="'Courier New',Courier,monospace"
-        font-size="14" letter-spacing="3" fill="#363636">STATUS: RESEARCH MODE — ACTIVE</text>
+  <!-- PRECISION -->
+  <rect x="277" y="208" width="120" height="1.5" rx="0.75" fill="url(#div2)"/>
+  <text x="337" y="246" text-anchor="middle" font-family="system-ui,sans-serif" font-size="34">⚡</text>
+  <text x="337" y="265" text-anchor="middle" font-family="'Courier New',Consolas,monospace" font-size="10" fill="#2563EB" letter-spacing="4">PRECISION</text>
+  <text x="337" y="280" text-anchor="middle" font-family="Georgia,serif" font-size="9" fill="#1E3A8A" font-style="italic">every line, a decision.</text>
 
-  <!-- ROW 1 — AI Core (6 pills) centered across 800 -->
-  <rect x="116" y="238" width="80"  height="26" rx="13" fill="#f3f3f3" stroke="#111111" stroke-width="1" style="animation:pillIn 0.6s ease 1.2s both"/>
-  <text x="156" y="255" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="13" fill="#111111" style="animation:pillIn 0.6s ease 1.2s both">🐍 Python</text>
+  <!-- PATIENCE -->
+  <rect x="502" y="208" width="120" height="1.5" rx="0.75" fill="url(#div3)"/>
+  <text x="562" y="246" text-anchor="middle" font-family="system-ui,sans-serif" font-size="34">🔱</text>
+  <text x="562" y="265" text-anchor="middle" font-family="'Courier New',Consolas,monospace" font-size="10" fill="#B45309" letter-spacing="4">PATIENCE</text>
+  <text x="562" y="280" text-anchor="middle" font-family="Georgia,serif" font-size="9" fill="#78350F" font-style="italic">the long game wins.</text>
 
-  <rect x="204" y="238" width="72"  height="26" rx="13" fill="#f3f3f3" stroke="#111111" stroke-width="1" style="animation:pillIn 0.6s ease 1.3s both"/>
-  <text x="240" y="255" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="13" fill="#111111" style="animation:pillIn 0.6s ease 1.3s both">🤖 AI/ML</text>
+  <!-- OUTLAST -->
+  <rect x="727" y="208" width="120" height="1.5" rx="0.75" fill="url(#div4)"/>
+  <text x="787" y="246" text-anchor="middle" font-family="system-ui,sans-serif" font-size="34">💀</text>
+  <text x="787" y="265" text-anchor="middle" font-family="'Courier New',Consolas,monospace" font-size="10" fill="#9F1239" letter-spacing="4">OUTLAST</text>
+  <text x="787" y="280" text-anchor="middle" font-family="Georgia,serif" font-size="9" fill="#7F1D1D" font-style="italic">they trend. you endure.</text>
 
-  <rect x="284" y="238" width="122" height="26" rx="13" fill="#f3f3f3" stroke="#111111" stroke-width="1" style="animation:pillIn 0.6s ease 1.4s both"/>
-  <text x="345" y="255" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="13" fill="#111111" style="animation:pillIn 0.6s ease 1.4s both">🧠 Deep Learning</text>
+  <!-- ░░ STACK SECTION DIVIDER ░░ -->
+  <rect x="60" y="296" width="780" height="1" fill="url(#midSep)"/>
+  <text x="450" y="311" text-anchor="middle"
+    font-family="'Courier New',Consolas,monospace"
+    font-size="7.5" fill="#154F66" letter-spacing="5">◆  THE STACK  ◆</text>
 
-  <rect x="414" y="238" width="108" height="26" rx="13" fill="#f3f3f3" stroke="#111111" stroke-width="1" style="animation:pillIn 0.6s ease 1.5s both"/>
-  <text x="468" y="255" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="13" fill="#111111" style="animation:pillIn 0.6s ease 1.5s both">🔬 TensorFlow</text>
+  <!-- ░░ TECH PILLS ░░ -->
 
-  <rect x="530" y="238" width="90"  height="26" rx="13" fill="#f3f3f3" stroke="#111111" stroke-width="1" style="animation:pillIn 0.6s ease 1.6s both"/>
-  <text x="575" y="255" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="13" fill="#111111" style="animation:pillIn 0.6s ease 1.6s both">🔥 PyTorch</text>
+  <!-- ROW 1: AI / ML (6 pills) — centered total width 567px, start x=167 -->
+  <rect x="167" y="320" width="80"  height="26" rx="13" fill="#0A0F1A" stroke="#1C2E44" stroke-width="1" style="animation:pillIn 0.6s ease 1.2s both"/>
+  <text x="207" y="337" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="12" fill="#6B8BAA" style="animation:pillIn 0.6s ease 1.2s both">🐍 Python</text>
 
-  <rect x="628" y="238" width="55"  height="26" rx="13" fill="#f3f3f3" stroke="#111111" stroke-width="1" style="animation:pillIn 0.6s ease 1.7s both"/>
-  <text x="655" y="255" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="13" fill="#111111" style="animation:pillIn 0.6s ease 1.7s both">⚗️ JAX</text>
+  <rect x="255" y="320" width="72"  height="26" rx="13" fill="#0A0F1A" stroke="#1C2E44" stroke-width="1" style="animation:pillIn 0.6s ease 1.3s both"/>
+  <text x="291" y="337" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="12" fill="#6B8BAA" style="animation:pillIn 0.6s ease 1.3s both">🤖 AI/ML</text>
 
-  <!-- ROW 2 — Data and Libraries (5 pills) -->
-  <rect x="166" y="273" width="78"  height="26" rx="13" fill="#f3f3f3" stroke="#111111" stroke-width="1" style="animation:pillIn 0.6s ease 1.4s both"/>
-  <text x="205" y="290" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="13" fill="#111111" style="animation:pillIn 0.6s ease 1.4s both">📊 NumPy</text>
+  <rect x="335" y="320" width="122" height="26" rx="13" fill="#0A0F1A" stroke="#1C2E44" stroke-width="1" style="animation:pillIn 0.6s ease 1.4s both"/>
+  <text x="396" y="337" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="12" fill="#6B8BAA" style="animation:pillIn 0.6s ease 1.4s both">🧠 Deep Learning</text>
 
-  <rect x="252" y="273" width="82"  height="26" rx="13" fill="#f3f3f3" stroke="#111111" stroke-width="1" style="animation:pillIn 0.6s ease 1.5s both"/>
-  <text x="293" y="290" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="13" fill="#111111" style="animation:pillIn 0.6s ease 1.5s both">🐼 Pandas</text>
+  <rect x="465" y="320" width="108" height="26" rx="13" fill="#0A0F1A" stroke="#1C2E44" stroke-width="1" style="animation:pillIn 0.6s ease 1.5s both"/>
+  <text x="519" y="337" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="12" fill="#6B8BAA" style="animation:pillIn 0.6s ease 1.5s both">🔬 TensorFlow</text>
 
-  <rect x="342" y="273" width="108" height="26" rx="13" fill="#f3f3f3" stroke="#111111" stroke-width="1" style="animation:pillIn 0.6s ease 1.6s both"/>
-  <text x="396" y="290" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="13" fill="#111111" style="animation:pillIn 0.6s ease 1.6s both">🔬 Scikit-learn</text>
+  <rect x="581" y="320" width="90"  height="26" rx="13" fill="#0A0F1A" stroke="#1C2E44" stroke-width="1" style="animation:pillIn 0.6s ease 1.6s both"/>
+  <text x="626" y="337" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="12" fill="#6B8BAA" style="animation:pillIn 0.6s ease 1.6s both">🔥 PyTorch</text>
 
-  <rect x="458" y="273" width="85"  height="26" rx="13" fill="#f3f3f3" stroke="#111111" stroke-width="1" style="animation:pillIn 0.6s ease 1.7s both"/>
-  <text x="500" y="290" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="13" fill="#111111" style="animation:pillIn 0.6s ease 1.7s both">⚡ FastAPI</text>
+  <rect x="679" y="320" width="55"  height="26" rx="13" fill="#0A0F1A" stroke="#1C2E44" stroke-width="1" style="animation:pillIn 0.6s ease 1.7s both"/>
+  <text x="707" y="337" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="12" fill="#6B8BAA" style="animation:pillIn 0.6s ease 1.7s both">⚗️ JAX</text>
 
-  <rect x="551" y="273" width="82"  height="26" rx="13" fill="#f3f3f3" stroke="#111111" stroke-width="1" style="animation:pillIn 0.6s ease 1.8s both"/>
-  <text x="592" y="290" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="13" fill="#111111" style="animation:pillIn 0.6s ease 1.8s both">🐳 Docker</text>
+  <!-- ROW 2: Data / Libraries (5 pills) — total 467px, start x=217 -->
+  <rect x="217" y="355" width="78"  height="26" rx="13" fill="#0A0F1A" stroke="#1C2E44" stroke-width="1" style="animation:pillIn 0.6s ease 1.4s both"/>
+  <text x="256" y="372" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="12" fill="#6B8BAA" style="animation:pillIn 0.6s ease 1.4s both">📊 NumPy</text>
 
-  <!-- ROW 3 — Web and Infra (6 pills) -->
-  <rect x="115" y="308" width="95"  height="26" rx="13" fill="#f3f3f3" stroke="#111111" stroke-width="1" style="animation:pillIn 0.6s ease 1.6s both"/>
-  <text x="162" y="325" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="13" fill="#111111" style="animation:pillIn 0.6s ease 1.6s both">🌐 Full-Stack</text>
+  <rect x="303" y="355" width="82"  height="26" rx="13" fill="#0A0F1A" stroke="#1C2E44" stroke-width="1" style="animation:pillIn 0.6s ease 1.5s both"/>
+  <text x="344" y="372" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="12" fill="#6B8BAA" style="animation:pillIn 0.6s ease 1.5s both">🐼 Pandas</text>
 
-  <rect x="218" y="308" width="115" height="26" rx="13" fill="#f3f3f3" stroke="#111111" stroke-width="1" style="animation:pillIn 0.6s ease 1.7s both"/>
-  <text x="275" y="325" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="13" fill="#111111" style="animation:pillIn 0.6s ease 1.7s both">💻 HTML/CSS/JS</text>
+  <rect x="393" y="355" width="108" height="26" rx="13" fill="#0A0F1A" stroke="#1C2E44" stroke-width="1" style="animation:pillIn 0.6s ease 1.6s both"/>
+  <text x="447" y="372" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="12" fill="#6B8BAA" style="animation:pillIn 0.6s ease 1.6s both">🔬 Scikit-learn</text>
 
-  <rect x="341" y="308" width="103" height="26" rx="13" fill="#f3f3f3" stroke="#111111" stroke-width="1" style="animation:pillIn 0.6s ease 1.8s both"/>
-  <text x="392" y="325" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="13" fill="#111111" style="animation:pillIn 0.6s ease 1.8s both">📘 TypeScript</text>
+  <rect x="509" y="355" width="85"  height="26" rx="13" fill="#0A0F1A" stroke="#1C2E44" stroke-width="1" style="animation:pillIn 0.6s ease 1.7s both"/>
+  <text x="552" y="372" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="12" fill="#6B8BAA" style="animation:pillIn 0.6s ease 1.7s both">⚡ FastAPI</text>
 
-  <rect x="452" y="308" width="80"  height="26" rx="13" fill="#f3f3f3" stroke="#111111" stroke-width="1" style="animation:pillIn 0.6s ease 1.9s both"/>
-  <text x="492" y="325" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="13" fill="#111111" style="animation:pillIn 0.6s ease 1.9s both">🐧 Linux</text>
+  <rect x="602" y="355" width="82"  height="26" rx="13" fill="#0A0F1A" stroke="#1C2E44" stroke-width="1" style="animation:pillIn 0.6s ease 1.8s both"/>
+  <text x="643" y="372" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="12" fill="#6B8BAA" style="animation:pillIn 0.6s ease 1.8s both">🐳 Docker</text>
 
-  <rect x="540" y="308" width="62"  height="26" rx="13" fill="#f3f3f3" stroke="#111111" stroke-width="1" style="animation:pillIn 0.6s ease 2.0s both"/>
-  <text x="571" y="325" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="13" fill="#111111" style="animation:pillIn 0.6s ease 2.0s both">🔀 Git</text>
+  <!-- ROW 3: Web / Infra (6 pills) — total 570px, start x=165 -->
+  <rect x="165" y="390" width="95"  height="26" rx="13" fill="#0A0F1A" stroke="#1C2E44" stroke-width="1" style="animation:pillIn 0.6s ease 1.6s both"/>
+  <text x="213" y="407" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="12" fill="#6B8BAA" style="animation:pillIn 0.6s ease 1.6s both">🌐 Full-Stack</text>
 
-  <rect x="610" y="308" width="75"  height="26" rx="13" fill="#f3f3f3" stroke="#111111" stroke-width="1" style="animation:pillIn 0.6s ease 2.1s both"/>
-  <text x="647" y="325" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="13" fill="#111111" style="animation:pillIn 0.6s ease 2.1s both">⚙️ CI/CD</text>
+  <rect x="268" y="390" width="115" height="26" rx="13" fill="#0A0F1A" stroke="#1C2E44" stroke-width="1" style="animation:pillIn 0.6s ease 1.7s both"/>
+  <text x="326" y="407" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="12" fill="#6B8BAA" style="animation:pillIn 0.6s ease 1.7s both">💻 HTML/CSS/JS</text>
 
-  <!-- Bottom label -->
-  <text x="400" y="368" text-anchor="middle"
-        font-family="'Courier New',Courier,monospace"
-        font-size="11" letter-spacing="4" fill="#1f1f1f"
-        style="animation:fadeIn 0.8s ease 2.5s both">· · · depth is the only metric that matters · · ·</text>
+  <rect x="391" y="390" width="103" height="26" rx="13" fill="#0A0F1A" stroke="#1C2E44" stroke-width="1" style="animation:pillIn 0.6s ease 1.8s both"/>
+  <text x="443" y="407" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="12" fill="#6B8BAA" style="animation:pillIn 0.6s ease 1.8s both">📘 TypeScript</text>
+
+  <rect x="502" y="390" width="80"  height="26" rx="13" fill="#0A0F1A" stroke="#1C2E44" stroke-width="1" style="animation:pillIn 0.6s ease 1.9s both"/>
+  <text x="542" y="407" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="12" fill="#6B8BAA" style="animation:pillIn 0.6s ease 1.9s both">🐧 Linux</text>
+
+  <rect x="590" y="390" width="62"  height="26" rx="13" fill="#0A0F1A" stroke="#1C2E44" stroke-width="1" style="animation:pillIn 0.6s ease 2.0s both"/>
+  <text x="621" y="407" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="12" fill="#6B8BAA" style="animation:pillIn 0.6s ease 2.0s both">🔀 Git</text>
+
+  <rect x="660" y="390" width="75"  height="26" rx="13" fill="#0A0F1A" stroke="#1C2E44" stroke-width="1" style="animation:pillIn 0.6s ease 2.1s both"/>
+  <text x="698" y="407" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="12" fill="#6B8BAA" style="animation:pillIn 0.6s ease 2.1s both">⚙️ CI/CD</text>
+
+  <!-- Copyright -->
+  <text x="450" y="433" text-anchor="middle"
+    font-family="'Courier New',Consolas,monospace"
+    font-size="7.5" fill="#0E2233" letter-spacing="2">CC BY-NC 4.0  ·  © 2025 AZHAR SHAKEEL  ·  ALL RIGHTS RESERVED</text>
 
 </svg>
