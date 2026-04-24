@@ -1,125 +1,158 @@
 <!-- Proprietary asset. Reuse, modification, or redistribution is prohibited without prior written permission. -->
 <svg width="900" height="340" viewBox="0 0 900 340" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="rowBg" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%"   style="stop-color:#f0f0f0;stop-opacity:1"/>
-      <stop offset="100%" style="stop-color:#f2f2f2;stop-opacity:1"/>
+    <linearGradient id="rowBgA" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#0A1520" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#0C1A28" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="rowBgB" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#070B15" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#090E1A" stop-opacity="1"/>
     </linearGradient>
     <linearGradient id="headerBg" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%"   style="stop-color:#e0e0e0;stop-opacity:1"/>
-      <stop offset="100%" style="stop-color:#e8e8e8;stop-opacity:1"/>
+      <stop offset="0%"   stop-color="#0D1F30" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#0F2336" stop-opacity="1"/>
     </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="3" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    <linearGradient id="sectionBg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#080E18" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#0A1220" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="outerBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#3AAFCC" stop-opacity="0.5"/>
+      <stop offset="50%"  stop-color="#1A3A4A" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#3AAFCC" stop-opacity="0.5"/>
+    </linearGradient>
+    <linearGradient id="edgeTop" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#3AAFCC" stop-opacity="0"/>
+      <stop offset="30%"  stop-color="#3AAFCC" stop-opacity="0.7"/>
+      <stop offset="70%"  stop-color="#3AAFCC" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#3AAFCC" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="edgeBot" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#3AAFCC" stop-opacity="0"/>
+      <stop offset="30%"  stop-color="#3AAFCC" stop-opacity="0.2"/>
+      <stop offset="70%"  stop-color="#3AAFCC" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#3AAFCC" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="barGlow" x="-10%" y="-60%" width="120%" height="220%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
   </defs>
 
   <style>
-    @keyframes barGrow {
-      0%   { width: 0; }
-      100% { width: var(--w); }
-    }
-    @keyframes fadeIn {
-      0%   { opacity: 0; }
-      100% { opacity: 1; }
-    }
-    @keyframes borderPulse {
-      0%, 100% { opacity: 0.5; }
-      50%       { opacity: 1; }
-    }
+    @keyframes borderPulse { 0%,100%{opacity:0.5} 50%{opacity:1} }
+    @keyframes fadeIn       { 0%{opacity:0} 100%{opacity:1} }
   </style>
 
   <!-- Background -->
-  <rect width="900" height="340" fill="#ffffff"/>
+  <rect width="900" height="340" fill="#070B15"/>
+
+  <!-- Grid -->
+  <line x1="0" y1="113" x2="900" y2="113" stroke="white" stroke-opacity="0.01" stroke-width="1"/>
+  <line x1="0" y1="226" x2="900" y2="226" stroke="white" stroke-opacity="0.01" stroke-width="1"/>
+  <line x1="500" y1="0"  x2="500" y2="340" stroke="white" stroke-opacity="0.01" stroke-width="1"/>
+
+  <!-- Edge accents -->
+  <rect x="0" y="0"   width="900" height="2" fill="url(#edgeTop)"/>
+  <rect x="0" y="338" width="900" height="2" fill="url(#edgeBot)"/>
 
   <!-- Outer border -->
-  <rect x="10" y="10" width="880" height="320" rx="6" ry="6"
-        fill="none" stroke="#111111" stroke-width="1"
-        style="animation: borderPulse 4s ease-in-out infinite;"/>
+  <rect x="10" y="10" width="880" height="320" rx="6"
+        fill="none" stroke="url(#outerBorder)" stroke-width="1"
+        style="animation:borderPulse 4s ease-in-out infinite"/>
+
+  <!-- Corner brackets TL -->
+  <path d="M10 40 L10 10 L40 10" fill="none" stroke="#3AAFCC" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- TR -->
+  <path d="M890 40 L890 10 L860 10" fill="none" stroke="#3AAFCC" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- BL -->
+  <path d="M10 300 L10 330 L40 330" fill="none" stroke="#3AAFCC" stroke-opacity="0.2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- BR -->
+  <path d="M890 300 L890 330 L860 330" fill="none" stroke="#3AAFCC" stroke-opacity="0.2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 
   <!-- Section label -->
-  <text x="30" y="38" font-family="'Courier New', monospace" font-size="11"
-        fill="#303030" letter-spacing="3">STACK TOPOLOGY</text>
-  <line x1="10" y1="48" x2="890" y2="48" stroke="#d6d6d6" stroke-width="1"/>
+  <text x="30" y="38"
+    font-family="'Courier New',monospace" font-size="11"
+    fill="#2E7A96" letter-spacing="4">STACK TOPOLOGY</text>
+  <line x1="10" y1="48" x2="890" y2="48" stroke="#0D2030" stroke-width="1"/>
 
   <!-- Header row -->
   <rect x="10" y="48" width="880" height="32" fill="url(#headerBg)"/>
-  <text x="30"  y="69" font-family="'Courier New', monospace" font-size="11" fill="#111111" letter-spacing="2">LAYER</text>
-  <text x="220" y="69" font-family="'Courier New', monospace" font-size="11" fill="#111111" letter-spacing="2">TECHNOLOGY</text>
-  <text x="500" y="69" font-family="'Courier New', monospace" font-size="11" fill="#111111" letter-spacing="2">SIGNAL</text>
-  <text x="760" y="69" font-family="'Courier New', monospace" font-size="11" fill="#111111" letter-spacing="2">TAG</text>
+  <text x="30"  y="69" font-family="'Courier New',monospace" font-size="11" fill="#3AAFCC" letter-spacing="2">LAYER</text>
+  <text x="220" y="69" font-family="'Courier New',monospace" font-size="11" fill="#3AAFCC" letter-spacing="2">TECHNOLOGY</text>
+  <text x="500" y="69" font-family="'Courier New',monospace" font-size="11" fill="#3AAFCC" letter-spacing="2">SIGNAL</text>
+  <text x="760" y="69" font-family="'Courier New',monospace" font-size="11" fill="#3AAFCC" letter-spacing="2">TAG</text>
 
   <!-- Divider after header -->
-  <line x1="10" y1="80" x2="890" y2="80" stroke="#1a1a1a" stroke-width="1"/>
+  <line x1="10" y1="80" x2="890" y2="80" stroke="#1A3A4A" stroke-width="1"/>
 
-  <!-- BACKEND label -->
-  <rect x="10" y="80" width="880" height="24" fill="#f5f5f5"/>
-  <text x="30" y="97" font-family="'Courier New', monospace" font-size="10" fill="#151515" letter-spacing="3">BACKEND</text>
+  <!-- BACKEND section label -->
+  <rect x="10" y="80" width="880" height="24" fill="url(#sectionBg)"/>
+  <text x="30" y="97" font-family="'Courier New',monospace" font-size="10" fill="#154F66" letter-spacing="3">BACKEND</text>
 
   <!-- Row: Python -->
-  <rect x="10" y="104" width="880" height="34" fill="url(#rowBg)"/>
-  <text x="30"  y="126" font-family="'Courier New', monospace" font-size="11" fill="#1a1a1a">·············</text>
-  <text x="220" y="126" font-family="'Courier New', monospace" font-size="12" fill="#111111">Python</text>
-  <!-- Bar -->
-  <rect x="500" y="116" width="144" height="8" rx="2" fill="#d6d6d6"/>
-  <rect x="500" y="116" width="120" height="8" rx="2" fill="#000000">
-    <animate attributeName="width" values="50;144;50" dur="2.4s" repeatCount="indefinite"/>
+  <rect x="10" y="104" width="880" height="34" fill="url(#rowBgA)"/>
+  <text x="30"  y="126" font-family="'Courier New',monospace" font-size="11" fill="#1D3A50">·············</text>
+  <text x="220" y="126" font-family="'Courier New',monospace" font-size="12" fill="#6B8BAA">Python</text>
+  <rect x="500" y="116" width="200" height="8" rx="2" fill="#0A1A28"/>
+  <rect x="500" y="116" width="170" height="8" rx="2" fill="#3AAFCC" filter="url(#barGlow)">
+    <animate attributeName="width" values="60;190;60" dur="2.4s" repeatCount="indefinite"/>
   </rect>
-  <text x="760" y="126" font-family="'Courier New', monospace" font-size="10" fill="#111111">Primary</text>
+  <text x="760" y="126" font-family="'Courier New',monospace" font-size="10" fill="#2E7A96">Primary</text>
 
   <!-- Row: AI/ML -->
-  <rect x="10" y="138" width="880" height="34" fill="#fafafa"/>
-  <text x="30"  y="160" font-family="'Courier New', monospace" font-size="11" fill="#1a1a1a">·············</text>
-  <text x="220" y="160" font-family="'Courier New', monospace" font-size="12" fill="#111111">AI / ML Systems</text>
-  <rect x="500" y="150" width="144" height="8" rx="2" fill="#d6d6d6"/>
-  <rect x="500" y="150" width="98" height="8" rx="2" fill="#000000">
-    <animate attributeName="width" values="38;132;38" dur="2.6s" begin="0.1s" repeatCount="indefinite"/>
+  <rect x="10" y="138" width="880" height="34" fill="url(#rowBgB)"/>
+  <text x="30"  y="160" font-family="'Courier New',monospace" font-size="11" fill="#1D3A50">·············</text>
+  <text x="220" y="160" font-family="'Courier New',monospace" font-size="12" fill="#6B8BAA">AI / ML Systems</text>
+  <rect x="500" y="150" width="200" height="8" rx="2" fill="#0A1A28"/>
+  <rect x="500" y="150" width="145" height="8" rx="2" fill="#2563EB" filter="url(#barGlow)">
+    <animate attributeName="width" values="40;165;40" dur="2.6s" begin="0.1s" repeatCount="indefinite"/>
   </rect>
-  <text x="760" y="160" font-family="'Courier New', monospace" font-size="10" fill="#111111">Precise</text>
+  <text x="760" y="160" font-family="'Courier New',monospace" font-size="10" fill="#2E7A96">Precise</text>
 
   <!-- Row: Algorithm -->
-  <rect x="10" y="172" width="880" height="34" fill="url(#rowBg)"/>
-  <text x="30"  y="194" font-family="'Courier New', monospace" font-size="11" fill="#1a1a1a">·············</text>
-  <text x="220" y="194" font-family="'Courier New', monospace" font-size="12" fill="#111111">Algorithm Design</text>
-  <rect x="500" y="184" width="144" height="8" rx="2" fill="#d6d6d6"/>
-  <rect x="500" y="184" width="90" height="8" rx="2" fill="#000000">
-    <animate attributeName="width" values="30;120;30" dur="2.8s" begin="0.2s" repeatCount="indefinite"/>
+  <rect x="10" y="172" width="880" height="34" fill="url(#rowBgA)"/>
+  <text x="30"  y="194" font-family="'Courier New',monospace" font-size="11" fill="#1D3A50">·············</text>
+  <text x="220" y="194" font-family="'Courier New',monospace" font-size="12" fill="#6B8BAA">Algorithm Design</text>
+  <rect x="500" y="184" width="200" height="8" rx="2" fill="#0A1A28"/>
+  <rect x="500" y="184" width="130" height="8" rx="2" fill="#7C3AED" filter="url(#barGlow)">
+    <animate attributeName="width" values="35;155;35" dur="2.8s" begin="0.2s" repeatCount="indefinite"/>
   </rect>
-  <text x="760" y="194" font-family="'Courier New', monospace" font-size="10" fill="#111111">Custom</text>
+  <text x="760" y="194" font-family="'Courier New',monospace" font-size="10" fill="#2E7A96">Custom</text>
 
-  <!-- INFRASTRUCTURE label -->
-  <line x1="10" y1="206" x2="890" y2="206" stroke="#e4e4e4" stroke-width="1"/>
-  <rect x="10" y="206" width="880" height="24" fill="#f5f5f5"/>
-  <text x="30" y="223" font-family="'Courier New', monospace" font-size="10" fill="#151515" letter-spacing="3">INFRASTRUCTURE</text>
+  <!-- INFRASTRUCTURE section label -->
+  <line x1="10" y1="206" x2="890" y2="206" stroke="#0D2030" stroke-width="1"/>
+  <rect x="10" y="206" width="880" height="24" fill="url(#sectionBg)"/>
+  <text x="30" y="223" font-family="'Courier New',monospace" font-size="10" fill="#154F66" letter-spacing="3">INFRASTRUCTURE</text>
 
   <!-- Row: Linux -->
-  <rect x="10" y="230" width="880" height="34" fill="url(#rowBg)"/>
-  <text x="30"  y="252" font-family="'Courier New', monospace" font-size="11" fill="#1a1a1a">·············</text>
-  <text x="220" y="252" font-family="'Courier New', monospace" font-size="12" fill="#111111">Linux</text>
-  <rect x="500" y="242" width="144" height="8" rx="2" fill="#d6d6d6"/>
-  <rect x="500" y="242" width="124" height="8" rx="2" fill="#000000">
-    <animate attributeName="width" values="56;144;56" dur="2.5s" begin="0.3s" repeatCount="indefinite"/>
+  <rect x="10" y="230" width="880" height="34" fill="url(#rowBgA)"/>
+  <text x="30"  y="252" font-family="'Courier New',monospace" font-size="11" fill="#1D3A50">·············</text>
+  <text x="220" y="252" font-family="'Courier New',monospace" font-size="12" fill="#6B8BAA">Linux</text>
+  <rect x="500" y="242" width="200" height="8" rx="2" fill="#0A1A28"/>
+  <rect x="500" y="242" width="180" height="8" rx="2" fill="#10B981" filter="url(#barGlow)">
+    <animate attributeName="width" values="70;200;70" dur="2.5s" begin="0.3s" repeatCount="indefinite"/>
   </rect>
-  <text x="760" y="252" font-family="'Courier New', monospace" font-size="10" fill="#111111">Native</text>
+  <text x="760" y="252" font-family="'Courier New',monospace" font-size="10" fill="#2E7A96">Native</text>
 
-  <!-- Row: Docker -->
-  <rect x="10" y="264" width="880" height="34" fill="#fafafa"/>
-  <text x="30"  y="286" font-family="'Courier New', monospace" font-size="11" fill="#1a1a1a">·············</text>
-  <text x="220" y="286" font-family="'Courier New', monospace" font-size="12" fill="#111111">Docker / CI/CD</text>
-  <rect x="500" y="276" width="144" height="8" rx="2" fill="#d6d6d6"/>
-  <rect x="500" y="276" width="84" height="8" rx="2" fill="#000000">
-    <animate attributeName="width" values="26;108;26" dur="3s" begin="0.4s" repeatCount="indefinite"/>
+  <!-- Row: Docker / CI/CD -->
+  <rect x="10" y="264" width="880" height="34" fill="url(#rowBgB)"/>
+  <text x="30"  y="286" font-family="'Courier New',monospace" font-size="11" fill="#1D3A50">·············</text>
+  <text x="220" y="286" font-family="'Courier New',monospace" font-size="12" fill="#6B8BAA">Docker / CI/CD</text>
+  <rect x="500" y="276" width="200" height="8" rx="2" fill="#0A1A28"/>
+  <rect x="500" y="276" width="115" height="8" rx="2" fill="#F59E0B" filter="url(#barGlow)">
+    <animate attributeName="width" values="30;140;30" dur="3s" begin="0.4s" repeatCount="indefinite"/>
   </rect>
-  <text x="760" y="286" font-family="'Courier New', monospace" font-size="10" fill="#111111">Hardened</text>
+  <text x="760" y="286" font-family="'Courier New',monospace" font-size="10" fill="#2E7A96">Hardened</text>
 
   <!-- Shadow stack row -->
-  <line x1="10" y1="298" x2="890" y2="298" stroke="#e4e4e4" stroke-width="1"/>
-  <rect x="10" y="298" width="880" height="32" fill="#ffffff"/>
-  <text x="30"  y="319" font-family="'Courier New', monospace" font-size="11" fill="#151515">·············</text>
-  <text x="220" y="319" font-family="'Courier New', monospace" font-size="11" fill="#151515">▓▓▓▓  SHADOW STACK</text>
-  <text x="760" y="319" font-family="'Courier New', monospace" font-size="10" fill="#1f1f1f">Private</text>
+  <line x1="10" y1="298" x2="890" y2="298" stroke="#0D2030" stroke-width="1"/>
+  <rect x="10" y="298" width="880" height="32" fill="#070B15"/>
+  <text x="30"  y="319" font-family="'Courier New',monospace" font-size="11" fill="#1D3A50">·············</text>
+  <text x="220" y="319" font-family="'Courier New',monospace" font-size="11" fill="#9F1239">▓▓▓▓  SHADOW STACK</text>
+  <text x="760" y="319" font-family="'Courier New',monospace" font-size="10" fill="#7F1D1D">Private</text>
 
-  <!-- Bottom border -->
-  <line x1="10" y1="330" x2="890" y2="330" stroke="#d6d6d6" stroke-width="1"/>
+  <!-- Bottom border line -->
+  <line x1="10" y1="330" x2="890" y2="330" stroke="#0D2030" stroke-width="1"/>
 </svg>
