@@ -1,10 +1,37 @@
 <svg width="900" height="410" viewBox="0 0 900 410" xmlns="http://www.w3.org/2000/svg">
 
+<defs>
+  <!-- Glow gradients -->
+  <linearGradient id="glowTop" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#3AAFCC" stop-opacity="0"/>
+    <stop offset="50%" stop-color="#3AAFCC" stop-opacity="0.8"/>
+    <stop offset="100%" stop-color="#3AAFCC" stop-opacity="0"/>
+  </linearGradient>
+
+  <linearGradient id="glowBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#3AAFCC" stop-opacity="0.4"/>
+    <stop offset="50%" stop-color="#1A3A4A" stop-opacity="0.7"/>
+    <stop offset="100%" stop-color="#3AAFCC" stop-opacity="0.4"/>
+  </linearGradient>
+</defs>
+
+<!-- Background -->
 <rect width="900" height="410" fill="#070B15"/>
+
+<!-- Top / Bottom Glow -->
+<rect x="0" y="0" width="900" height="2" fill="url(#glowTop)"/>
+<rect x="0" y="408" width="900" height="2" fill="url(#glowTop)" opacity="0.3"/>
+
+<!-- Outer Border -->
+<rect x="12" y="12" width="876" height="386" rx="8" fill="none" stroke="url(#glowBorder)" stroke-width="1"/>
+
+<!-- Corner accents -->
+<path d="M12 46 L12 12 L46 12" stroke="#3AAFCC" stroke-opacity="0.6" stroke-width="1.5" fill="none"/>
+<path d="M888 46 L888 12 L854 12" stroke="#3AAFCC" stroke-opacity="0.6" stroke-width="1.5" fill="none"/>
 
 <!-- Title -->
 <text x="38" y="38" font-family="Courier New, monospace" font-size="11" fill="#2E7A96" letter-spacing="4">
-⚙ TECH STACKS I ENGINEER WITH
+⚙ SYSTEM STACK · PRODUCTION SYSTEMS
 </text>
 
 <!-- Header -->
@@ -17,53 +44,51 @@
 <text x="627" y="72" text-anchor="middle" fill="#3AAFCC">🔧 Systems</text>
 <text x="801" y="72" text-anchor="middle" fill="#3AAFCC">☁ Infrastructure</text>
 
-<!-- ROW 1 -->
-<text x="101" y="110" text-anchor="middle" fill="#6B8BAA">HTML5</text>
-<text x="277" y="110" text-anchor="middle" fill="#6B8BAA">Python</text>
-<text x="452" y="110" text-anchor="middle" fill="#6B8BAA">PostgreSQL</text>
-<text x="627" y="110" text-anchor="middle" fill="#6B8BAA">Git</text>
-<text x="801" y="110" text-anchor="middle" fill="#6B8BAA">AWS</text>
+<!-- Rows -->
+<g fill="#6B8BAA" font-family="Courier New, monospace" font-size="11" text-anchor="middle">
 
-<!-- ROW 2 -->
-<text x="101" y="150" text-anchor="middle" fill="#6B8BAA">CSS3</text>
-<text x="277" y="150" text-anchor="middle" fill="#6B8BAA">Django</text>
-<text x="452" y="150" text-anchor="middle" fill="#6B8BAA">Redis</text>
-<text x="627" y="150" text-anchor="middle" fill="#6B8BAA">Docker</text>
-<text x="801" y="150" text-anchor="middle" fill="#6B8BAA">Linux</text>
+<text x="101" y="110">HTML5</text>
+<text x="277" y="110">Python</text>
+<text x="452" y="110">PostgreSQL</text>
+<text x="627" y="110">Git</text>
+<text x="801" y="110">AWS</text>
 
-<!-- ROW 3 -->
-<text x="101" y="190" text-anchor="middle" fill="#6B8BAA">JavaScript</text>
-<text x="277" y="190" text-anchor="middle" fill="#6B8BAA">FastAPI</text>
-<text x="452" y="190" text-anchor="middle" fill="#6B8BAA">MongoDB</text>
-<text x="627" y="190" text-anchor="middle" fill="#6B8BAA">Celery</text>
-<text x="801" y="190" text-anchor="middle" fill="#6B8BAA">Docker</text>
+<text x="101" y="150">CSS3</text>
+<text x="277" y="150">Django / FastAPI</text>
+<text x="452" y="150">Redis</text>
+<text x="627" y="150">Docker</text>
+<text x="801" y="150">Linux</text>
 
-<!-- ROW 4 -->
-<text x="101" y="230" text-anchor="middle" fill="#6B8BAA">React</text>
-<text x="277" y="230" text-anchor="middle" fill="#6B8BAA">AsyncIO</text>
-<text x="452" y="230" text-anchor="middle" fill="#6B8BAA">S3</text>
-<text x="627" y="230" text-anchor="middle" fill="#6B8BAA">Nginx</text>
-<text x="801" y="230" text-anchor="middle" fill="#6B8BAA">Kubernetes</text>
+<text x="101" y="190">JavaScript</text>
+<text x="277" y="190">Async Systems</text>
+<text x="452" y="190">S3 Storage</text>
+<text x="627" y="190">Celery</text>
+<text x="801" y="190">Kubernetes</text>
 
-<!-- ROW 5 -->
-<text x="101" y="270" text-anchor="middle" fill="#6B8BAA">TypeScript</text>
-<text x="277" y="270" text-anchor="middle" fill="#6B8BAA">REST APIs</text>
-<text x="452" y="270" text-anchor="middle" fill="#6B8BAA">Data Pipelines</text>
-<text x="627" y="270" text-anchor="middle" fill="#6B8BAA">CI/CD</text>
-<text x="801" y="270" text-anchor="middle" fill="#6B8BAA">VPC</text>
+<text x="101" y="230">React</text>
+<text x="277" y="230">API Design</text>
+<text x="452" y="230">Data Pipelines</text>
+<text x="627" y="230">Nginx</text>
+<text x="801" y="230">Networking</text>
 
-<!-- ROW 6 -->
-<text x="101" y="310" text-anchor="middle" fill="#6B8BAA">Tailwind</text>
-<text x="277" y="310" text-anchor="middle" fill="#6B8BAA">NumPy / Pandas</text>
-<text x="452" y="310" text-anchor="middle" fill="#6B8BAA">ETL Systems</text>
-<text x="627" y="310" text-anchor="middle" fill="#6B8BAA">HuggingFace</text>
-<text x="801" y="310" text-anchor="middle" fill="#6B8BAA">Load Balancing</text>
+<text x="101" y="270">TypeScript</text>
+<text x="277" y="270">REST / gRPC</text>
+<text x="452" y="270">Vector Indexing</text>
+<text x="627" y="270">CI/CD</text>
+<text x="801" y="270">Scaling</text>
 
-<!-- ROW 7 -->
-<text x="101" y="350" text-anchor="middle" fill="#6B8BAA">UI Systems</text>
-<text x="277" y="350" text-anchor="middle" fill="#6B8BAA">PyTorch</text>
-<text x="452" y="350" text-anchor="middle" fill="#6B8BAA">Vector DB (FAISS)</text>
-<text x="627" y="350" text-anchor="middle" fill="#6B8BAA">Transformers · LangChain · OpenAI</text>
-<text x="801" y="350" text-anchor="middle" fill="#6B8BAA">Cloud Architecture</text>
+<text x="101" y="310">Tailwind</text>
+<text x="277" y="310">NumPy · Pandas</text>
+<text x="452" y="310">FAISS / Vector DB</text>
+<text x="627" y="310">Hugging Face</text>
+<text x="801" y="310">Load Balancing</text>
+
+<text x="101" y="350">UI Systems</text>
+<text x="277" y="350">PyTorch</text>
+<text x="452" y="350">ETL Systems</text>
+<text x="627" y="350">Transformers</text>
+<text x="801" y="350">Cloud Architecture</text>
+
+</g>
 
 </svg>
